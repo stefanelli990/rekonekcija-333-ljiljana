@@ -1,6 +1,6 @@
 <template>
     <header class="text-white rounded-xl p-8  bg-gradient-to-r from-primaryColor/90 to-primaryColor/90  bg-cover bg-center">
-        <div class="flex justify-between items-center">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
             <RouterLink to="/" class="text-2xl font-bold flex items-center space-x-2">
                 <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_9_45)">
@@ -21,7 +21,7 @@
                 <RouterLink to="/about">About App</RouterLink>
             </nav>
         </div>
-        <div class="text-center font-semibold pt-16 pb-32 text-4xl">
+        <div class="text-center font-semibold pt-24 pb-24 text-4xl">
             <h1>Currency Converter</h1>
         </div>
     </header>
