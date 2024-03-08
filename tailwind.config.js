@@ -7,13 +7,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'primaryColor': '#0F418E',
-        'darkColor': '#242424'
-      },
-      backgroundImage: {
-        'header-img': "url('./src/assets/currency-bg.jpg')",
+        'very-dark-color': '#222222',
+        'dark-color': '#272727'
       }
-    },
+    }
   },
   plugins: [],
 }

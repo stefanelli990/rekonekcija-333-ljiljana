@@ -1,5 +1,0 @@
-<template>
-  about
-</template>
-
-

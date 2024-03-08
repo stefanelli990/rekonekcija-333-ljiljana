@@ -9,9 +9,6 @@
     input[type="number"]::-webkit-outer-spin-button {
         -webkit-appearance: none;
     }
-    body {
-        @apply p-4 fontFamily;
-    }
 }
 
 @layer utilities {
