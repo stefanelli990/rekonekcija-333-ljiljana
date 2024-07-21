@@ -1,16 +1,22 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
     "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Nunito', 'sans-serif'],
+        serif: ['Cormorant Garamond', 'serif'],
+      },
       colors: {
-        'very-dark-color': '#222222',
-        'dark-color': '#272727'
+        primaryColor: '#E883AD',
+        darkColor: '#1C1C1C',
+        offWhite1: '#FCFCFC',
+        offWhite2: '#F7F7F7'
       }
-    }
+    },
   },
   plugins: [],
 }
