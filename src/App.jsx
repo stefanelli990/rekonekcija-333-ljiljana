@@ -6,6 +6,8 @@ import Treatmants from "./components/Treatmants"
 import Benefits from "./components/Benefits"
 import About from "./components/About"
 import Faq from "./components/Faq"
+import Contact from "./components/Contact"
+import Footer from "./components/Footer"
 
 function App() {
   
@@ -19,6 +21,8 @@ function App() {
       <Benefits/>
       <About/>
       <Faq/>
+      <Contact/>
+      <Footer/>
     </>
   )
 }

@@ -11,7 +11,10 @@ export default {
         serif: ['Cormorant Garamond', 'serif'],
       },
       colors: {
-        primaryColor: '#E883AD',
+        'primaryColor': {
+          light: 'hsl(335deg 69% 77%)',
+          DEFAULT: 'hsl(335.05deg 68.71% 71.18%)',
+        },
         darkColor: '#1C1C1C',
         offWhite1: '#FCFCFC',
         offWhite2: '#F7F7F7'
