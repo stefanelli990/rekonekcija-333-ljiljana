@@ -4,8 +4,8 @@ export default function Footer() {
 
   return (
     <footer>
-        <div className="wrapper text-center py-8 font-normal border-t border-e-gray-300">
-        <p>&copy; {currentYear} Rekonekcija 333 Ljiljana. Developed by <a href="https://github.com/stefanelli990" target="_blank" className="underline">stefanelli990</a></p>
+        <div className="wrapper text-center">
+        <p className="py-8 border-t border-e-gray-300 font-normal">&copy; {currentYear} Rekonekcija 333 Ljiljana. Developed by <a href="https://github.com/stefanelli990" target="_blank" className="underline">stefanelli990</a></p>
         </div>
     </footer>
   )

@@ -4,10 +4,10 @@ import { FaPhoneAlt } from "react-icons/fa";
 export default function Contact() {
   return (
     <section id="section">
-      <div className="wrapper my-[100px] ">
-        <div className="md:flex md:items-center md:gap-24">
+      <div className="wrapper py-[75px] md:py-[150px]">
+        <div className="flex flex-col gap-12 md:flex-row md:items-center md:gap-24">
         <div className="md:w-1/2">
-          <h2>Vaša rekonekcija počinje ovde</h2>
+          <h2>Povežimo se</h2>
           <p>
           Ako imate pitanja u vezi rekonekcijskog isceljivanja, želite da saznate više o našim uslugama, ili biste želeli da zakažete svoju prvu sesiju, slobodno nas kontaktirajte. Vaša dobrobit je na prvom mestu i ovde sam da vam pružim podršku na vašem putu ka isceljenju.
           </p>

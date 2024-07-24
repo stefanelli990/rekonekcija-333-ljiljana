@@ -6,9 +6,9 @@ export default function Treatmants() {
     ]
   return (
     <section>
-        <div className="wrapper py-[100px]">
+        <div className="wrapper py-[75px] md:py-[150px]">
             <h2 className="text-center mb-[75px]">Tretmani za vas</h2>
-            <div className="flex gap-4">
+            <div className="flex flex-col md:flex-row gap-4">
                 {treatmants.map((item, index) => (
                     <div key={index} className="bg-offWhite1 px-6 py-10 rounded-2xl flex-1 text-center">
                     <h3>{item.treatmantTitle}</h3>

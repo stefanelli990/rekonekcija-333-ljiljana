@@ -6,11 +6,9 @@
 @tailwind utilities;
 
 @layer base {
-  * {
-    @apply tracking-wide;
-  }
+ 
   body {
-    @apply bg-white font-sans font-light;
+    @apply bg-white font-sans font-light leading-relaxed;
   }
   h1,
   h2 {

@@ -3,8 +3,8 @@ import aboutImg from '../assets/about-img.jpg'
 export default function About() {
   return (
     <section id="about">
-      <div className="wrapper py-[100px]">
-        <div className='grid grid-flow-col items-center gap-24'>
+      <div className="wrapper py-[75px] md:py-[150px]">
+        <div className='grid md:grid-flow-col items-center gap-16 md:gap-24'>
         <div className='h-[600px] rounded-tl-[100px] rounded-br-[100px] overflow-hidden'>
           <img className='h-full w-full object-cover' src={aboutImg} alt="" />
         </div>

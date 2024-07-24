@@ -47,9 +47,9 @@ export default function Benefits() {
   
   return (
     <section id="benefits" className="bg-offWhite1">
-      <div className="wrapper py-[100px]">
+      <div className="wrapper py-[75px] md:py-[150px]">
         <h2 className="text-center mb-[75px]">Dobrobiti rekonekcije</h2>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           {benefits.map((item, index) => (
             <div
               className="text-center flex flex-col justify-center items-center p-4"

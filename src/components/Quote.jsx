@@ -6,9 +6,9 @@ export default function Quote() {
       <div className="wrapper">
         <div
           style={{ backgroundImage: `url(${quoteImg})` }}
-          className="bg-center bg-cover py-24 bg-fixed rounded-[32px] overflow-hidden relative text-center -z-[-2]"
+          className="bg-center bg-cover py-[50px] md:py-[100px] bg-fixed rounded-[32px] overflow-hidden relative text-center -z-[-2]"
         >
-          <blockquote className="max-w-5xl text-white mx-auto">
+          <blockquote className="max-w-5xl text-white mx-auto p-4">
             <p className="italic">
               “Uđite. Lezite i zatvorite oči. Pustite sebe da plutate, ali
               nemojte zaspati. Verujte, onaj ko sluša misli i molitve sasvim je
@@ -20,7 +20,7 @@ export default function Quote() {
               <p>- Erik Perl, osnivač Rekonekcije</p>
             </footer>
           </blockquote>
-          <div className="bg-black/50 absolute top-0 left-0 right-0 bottom-0 -z-[1]"></div>
+          <div className="bg-black/50 absolute inset-0 -z-[1]"></div>
         </div>
       </div>
     </section>

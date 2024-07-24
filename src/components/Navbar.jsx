@@ -12,7 +12,7 @@ export default function Navbar() {
           <img src={logo} alt="Rekonekcija 333 Ljiljana Logo" width={80} />
         </Link>
         <nav>
-          <ul className="flex space-x-4 text-white">
+          <ul className="hidden md:flex space-x-4 font-normal text-white">
             {navLinks.map((item, index) => (
               <li key={index}>
                 <Link>{item}</Link>
