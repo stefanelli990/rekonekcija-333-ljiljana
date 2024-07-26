@@ -15,7 +15,7 @@
     @apply font-serif font-semibold mb-6;
   }
   h1 {
-    @apply text-[10vw] leading-[100%] sm:text-7xl;
+    @apply text-[13vw] leading-[100%] sm:text-7xl;
   }
   h2 {
     @apply text-5xl;

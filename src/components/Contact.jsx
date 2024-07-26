@@ -4,16 +4,16 @@ import { FaPhoneAlt } from "react-icons/fa";
 export default function Contact() {
   return (
     <section id="section">
-      <div className="wrapper py-[75px] md:py-[150px]">
-        <div className="flex flex-col gap-12 md:flex-row md:items-center md:gap-24">
+      <div className="wrapper py-[75px] lg:py-[150px]">
+        <div className="flex flex-col gap-12 md:flex-row md:items-center lg:gap-24">
         <div className="md:w-1/2">
           <h2>Povežimo se</h2>
           <p>
           Ako imate pitanja u vezi rekonekcijskog isceljivanja, želite da saznate više o našim uslugama, ili biste želeli da zakažete svoju prvu sesiju, slobodno nas kontaktirajte. Vaša dobrobit je na prvom mestu i ovde sam da vam pružim podršku na vašem putu ka isceljenju.
           </p>
-          <ul className="mt-4 space-y-4">
+          <ul className="mt-6 space-y-4">
             <li className="flex items-center space-x-4">
-                <div className="h-12 w-12 flex items-center justify-center  border border-primaryColor rounded-full">
+                <div className="h-12 w-12 flex items-center justify-center border border-primaryColor rounded-full">
                 <FaPhoneAlt className="text-primaryColor"/>
                 </div>
                 <span className="font-normal">+381 69 116 2977</span>

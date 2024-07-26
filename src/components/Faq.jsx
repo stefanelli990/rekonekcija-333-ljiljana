@@ -21,12 +21,12 @@ export default function Faq() {
   };
   return (
     <section id="faq" className="bg-offWhite1">
-        <div className="wrapper py-[75px] md:py-[150px]">
+        <div className="wrapper py-[75px] lg:py-[150px]">
             <h2 className="text-center mb-[75px]">Najčešća pitanja</h2>
             <ul>
             {faq.map((item,index) => (
                 <li key={index} className="mb-4">
-                    <button onClick={() => toggleAccordion(index)} className="px-8 py-5 bg-white text-left rounded-full cursor-pointer w-full flex justify-between items-center shadow-md shadow-slate-100 gap-4">
+                    <button onClick={() => toggleAccordion(index)} className="px-8 py-5 bg-white text-left rounded-3xl cursor-pointer w-full flex justify-between items-center shadow-md shadow-slate-100 gap-4">
                         <h3>{item.question}</h3>
                         <div className="relative">
                             <div className="w-[18px] h-[3px] bg-primaryColor rounded-full"></div>
@@ -34,7 +34,7 @@ export default function Faq() {
                         </div>
                     </button>
                     {openIndex === index && (
-                    <div className="bg-white px-8 pt-8 pb-6 -mt-8 rounded-b-3xl shadow-2xl shadow-slate-100">
+                    <div className="bg-white px-8 pt-4 pb-6 -mt-[20px] rounded-b-3xl shadow-2xl shadow-slate-100">
                         <p>{item.answer}</p>
                     </div>
                     )}

@@ -23,7 +23,7 @@ export default function Benefits() {
       benefitIcon: benefitImg3,
       benefitTitle: "Duhovni razvoj",
       benefitDesc:
-        "Podstiče unutrašnji mir, povećava svest o dubljim životnim svrhama i promoviše duhovni rast.",
+        "Podstiče unutrašnji mir, povećava svest o životnim svrhama i promoviše duhovni rast.",
     },
     {
       benefitIcon: benefitImg4,
@@ -47,7 +47,7 @@ export default function Benefits() {
   
   return (
     <section id="benefits" className="bg-offWhite1">
-      <div className="wrapper py-[75px] md:py-[150px]">
+      <div className="wrapper py-[75px] lg:py-[150px]">
         <h2 className="text-center mb-[75px]">Dobrobiti rekonekcije</h2>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           {benefits.map((item, index) => (
