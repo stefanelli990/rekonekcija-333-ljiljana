@@ -4,7 +4,7 @@ import wavyVector from '../assets/wavy-vector.svg'
 
 export default function Hero() {
   return (
-    <section id="hero-section" className="relative">
+    <section id="hero" className="relative">
         <video autoPlay muted loop id="myVideo" className="absolute inset-0 w-full h-full object-cover -z-[2]">
             <source src={heroVideo} type="video/mp4"/>
         </video>

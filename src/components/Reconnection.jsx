@@ -20,11 +20,11 @@ export default function Reconnection() {
   ];
 
   return (
-    <section id="reconnection-section">
+    <section id="rekonekcija" className="pb-[75px] lg:pb-[150px]">
       {reconnection.map((item, index) => (
         <div
           key={index}
-          className={`wrapper flex md:items-center flex-col gap-12 md:flex-row lg:gap-24 my-[75px] lg:my-[150px] ${index % 2 === 0 ? 'md:flex-row md:text-right' : 'md:flex-row-reverse md:text-left'}`}
+          className={`wrapper flex md:items-center flex-col gap-12 md:flex-row lg:gap-24 pt-[75px] lg:pt-[150px] ${index % 2 === 0 ? 'md:flex-row md:text-right' : 'md:flex-row-reverse md:text-left'}`}
         >
           <div className="md:w-1/2 ">
             <h2>{item.reconnectionTitle}</h2>

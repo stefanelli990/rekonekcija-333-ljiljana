@@ -1,11 +1,16 @@
-import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import logo from '../assets/logo.svg'
-import Menu from "../components/Menu"
+import { useState, useEffect } from "react";
+import { Link as ScrollLink } from "react-scroll";
+import logo from "../assets/logo.svg";
+import Menu from "../components/Menu";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
-  const navLinks = ['Rekonekcija', 'Tretmani', 'O meni', 'Kontakt'];
+  const navLinks = [
+    { name: "Rekonekcija", to: "rekonekcija" },
+    { name: "Tretmani", to: "tretmani" },
+    { name: "O meni", to: "o-meni" },
+    { name: "Kontakt", to: "kontakt" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,28 +21,50 @@ export default function Navbar() {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <header className={`fixed inset-x-0 top-0 z-10 duration-300 ${scrolled ? 'sm:bg-white ' : ''}`}>
+    <header
+      className={`fixed inset-x-0 top-0 z-10 duration-300 ${
+        scrolled ? "bg-white " : ""
+      }`}
+    >
       <div className="wrapper flex justify-between items-center mx-auto py-4">
-        <Link to="/">
-          <img className='w-[75px]' src={logo} alt="Rekonekcija 333 Ljiljana Logo"/>
-        </Link>
+        <ScrollLink to={"hero"}
+        duration={800}
+        smooth={true}
+        className="cursor-pointer">
+          <img
+            className="w-[75px]"
+            src={logo}
+            alt="Rekonekcija 333 Ljiljana Logo"
+          />
+        </ScrollLink>
         <nav>
-          <ul className={`hidden sm:flex space-x-4 font-normal ${scrolled ? 'text-darkColor' : 'text-white'}`}>
-            {navLinks.map((item, index) => (
+          <ul
+            className={`hidden sm:flex space-x-4 font-normal ${
+              scrolled ? "text-darkColor" : "text-white"
+            }`}
+          >
+            {navLinks.map((navLink, index) => (
               <li key={index}>
-                <Link className="hover:text-primaryColor duration-200">{item}</Link>
+                <ScrollLink
+                  to={navLink.to}
+                  smooth={true}
+                  duration={800}
+                  className="cursor-pointer hover:text-primaryColor duration-200"
+                >
+                  {navLink.name}
+                </ScrollLink>
               </li>
             ))}
           </ul>
         </nav>
-      <Menu/>
+        <Menu scroll={scrolled} />
       </div>
     </header>
   );

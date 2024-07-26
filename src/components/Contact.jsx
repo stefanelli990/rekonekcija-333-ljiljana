@@ -3,7 +3,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 export default function Contact() {
   return (
-    <section id="section">
+    <section id="kontakt">
       <div className="wrapper py-[75px] lg:py-[150px]">
         <div className="flex flex-col gap-12 md:flex-row md:items-center lg:gap-24">
         <div className="md:w-1/2">

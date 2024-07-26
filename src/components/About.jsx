@@ -2,7 +2,7 @@ import aboutImg from '../assets/about-img.jpg'
 
 export default function About() {
   return (
-    <section id="about">
+    <section id="o-meni">
       <div className="wrapper py-[75px] lg:py-[150px]">
         <div className='flex flex-col lg:flex-row items-center gap-16 lg:gap-24'>
         <div className='h-[400px] lg:h-[600px] lg:flex-1 rounded-tl-[100px] rounded-br-[100px] overflow-hidden'>

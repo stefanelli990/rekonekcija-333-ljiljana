@@ -5,7 +5,7 @@ export default function Treatmants() {
         { treatmantTitle: 'Lična Rekonekcija', treatmantDesc: 'Lična rekonekcija omogućava duboko i direktno energetsko oslobađanje blokada koje su se nakupljale tokom vašeg života. Ova metoda se izvodi u prisustvu, što omogućava direktan kontakt i rad sa vašim energetskim poljem. Lična Rekonekcija se radi samo jednom u životu i isključivo u prisustvu klijenta i praktičara.', treatmantPrice: 'Cena lične rekonekcije je 333€'}
     ]
   return (
-    <section>
+    <section id="tretmani">
         <div className="wrapper py-[75px] lg:py-[150px]">
             <h2 className="text-center mb-[75px]">Tretmani za vas</h2>
             <div className="flex flex-col md:flex-row gap-4">
