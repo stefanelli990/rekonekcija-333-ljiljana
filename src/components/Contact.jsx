@@ -16,28 +16,32 @@ export default function Contact() {
                 <div className="h-12 w-12 flex items-center justify-center border border-primaryColor rounded-full">
                 <FaPhoneAlt className="text-primaryColor"/>
                 </div>
-                <span className="font-normal">+381 69 116 2977</span>
+                <a href="tel:+381691162977" className="font-normal">+381 69 116 2977</a>
             </li>
             <li className="flex items-center space-x-4">
                 <div className="h-12 w-12 flex items-center justify-center  border border-primaryColor rounded-full">
                 <BsEnvelopeFill className="text-primaryColor"/>
                 </div>
-                <span className="font-normal">ljiljana.medovic@gmail.com</span>
+                <a href="mailto:ljiljana.medovic@gmail.com" className="font-normal">ljiljana.medovic@gmail.com</a>
             </li>
           </ul>
         </div>
         <form className="md:w-1/2 flex flex-col space-y-4">
           <div className="flex flex-col space-y-1">
-            <label htmlFor="">Ime i prezime</label>
-            <input className="border border-gray-200 rounded-xl py-2 px-3 outline-primaryColor" type="text" />
+            <label htmlFor="name">Ime i prezime</label>
+            <input className="border border-gray-200 rounded-xl py-2 px-3 outline-primaryColor" type="text" id="name"
+                name="name"/>
           </div>
           <div className="flex flex-col space-y-1">
-            <label htmlFor="">Email adresa</label>
-            <input className="border border-gray-200 rounded-xl py-2 px-3 outline-primaryColor" type="text" />
+            <label htmlFor="email">Email adresa</label>
+            <input className="border border-gray-200 rounded-xl py-2 px-3 outline-primaryColor"  type="email"
+                id="email"
+                name="email"/>
           </div>
           <div className="flex flex-col space-y-1">
-            <label htmlFor="">Vaša poruka</label>
-            <textarea className="border border-gray-200 rounded-xl py-2 px-3 resize-none outline-primaryColor" rows={6} name="" id=""></textarea>
+            <label htmlFor="message">Vaša poruka</label>
+            <textarea className="border border-gray-200 rounded-xl py-2 px-3 resize-none outline-primaryColor" rows={6} id="message"
+                name="message"></textarea>
           </div>
           <button className="btn">Pošaljite poruku</button>
         </form>

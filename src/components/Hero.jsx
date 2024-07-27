@@ -13,7 +13,7 @@ export default function Hero() {
                 <h1>Otkrijte Moć Rekonekcijskog Isceljenja</h1>
                 <p className="my-6 font-normal">Uz pomoć rekonekcijskog isceljivanja, otključajte svoj puni potencijal, obnovite unutrašnju energiju i postignite harmoniju u svakodnevnom životu.</p>
                 <div>
-                    <a href="tel:00496170961709" className="btn">Zakažite Tretman</a>
+                    <a href="tel:+381691162977" className="btn">Zakažite Tretman</a>
                 </div>
             </div>   
         </div>

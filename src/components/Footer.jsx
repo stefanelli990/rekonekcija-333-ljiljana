@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer>
         <div className="wrapper">
-        <div className="flex justify-between items-center text-center px-0 py-8 border-t border-e-gray-300 font-normal">
+        <div className="flex justify-between items-center text-center flex-col gap-6 lg:flex-row px-0 py-8 border-t border-e-gray-300 font-normal">
         <p>&copy; {currentYear} Rekonekcija 333 Ljiljana. Developed by <a href="https://github.com/stefanelli990" target="_blank" className="underline">stefanelli990</a></p>
         <div className="flex space-x-6">
           <a href="https://www.instagram.com/rekonekcija_ljiljana/" target="_blank" aria-label="Visit Instagram page"><FaInstagram /></a>
