@@ -1,7 +1,6 @@
-import { useState, useEffect } from "react";
-import { Link as ScrollLink } from "react-scroll";
-import logo from "../assets/logo.svg";
-import Menu from "../components/Menu";
+import { useState, useEffect } from "react"
+import logo from "../assets/logo.svg"
+import Menu from "../components/Menu"
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -34,16 +33,16 @@ export default function Navbar() {
       }`}
     >
       <div className="wrapper flex justify-between items-center mx-auto py-4">
-        <ScrollLink to={"hero"}
-        duration={800}
-        smooth={true}
-        className="cursor-pointer">
+        <a href={"#hero"}
+        className="cursor-pointer"
+        aria-label="Go to Hero section"
+        >
           <img
             className="w-[75px]"
             src={logo}
             alt="Rekonekcija 333 Ljiljana Logo"
           />
-        </ScrollLink>
+        </a>
         <nav>
           <ul
             className={`hidden sm:flex space-x-4 font-normal ${
@@ -52,15 +51,12 @@ export default function Navbar() {
           >
             {navLinks.map((navLink, index) => (
               <li key={index}>
-                <ScrollLink
-                  to={navLink.to}
-                  smooth={true}
-                  duration={800}
-                  className="cursor-pointer hover:text-primaryColor duration-200"
-                >
-                  {navLink.name}
-                </ScrollLink>
-              </li>
+              <a href={`#${navLink.to}`}
+                 aria-label={navLink.ariaLabel}
+                 className="cursor-pointer hover:text-primaryColor duration-200">
+                {navLink.name}
+              </a>
+            </li>
             ))}
           </ul>
         </nav>

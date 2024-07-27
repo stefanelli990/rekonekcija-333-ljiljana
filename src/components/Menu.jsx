@@ -1,4 +1,3 @@
-import { Link as ScrollLink } from "react-scroll"
 import { useState } from "react";
 
 export default function Menu({ scroll }) {
@@ -47,15 +46,13 @@ export default function Menu({ scroll }) {
           <ul className="space-y-8 text-3xl font-normal">
             {navLinks.map((navLink, index) => (
               <li key={index}>
-                <ScrollLink
-                  to={navLink.to}
-                  smooth={true}
-                  duration={800}
+                <a
+                  href={`#${navLink.to}`}
                   onClick={() => setMenuVisible(false)}
-                  offset={-50}
+                  aria-label={navLink.ariaLabel}
                 >
                   {navLink.name}
-                </ScrollLink>
+                </a>
               </li>
             ))}
           </ul>

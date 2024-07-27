@@ -1,4 +1,4 @@
-import quoteImg from "../assets/reconnection-img-1.jpg";
+import quoteImg from "../assets/cta-img.jpg"
 
 export default function Quote() {
   return (

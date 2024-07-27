@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import heroVideo from '../assets/hero-video.mp4'
 import wavyVector from '../assets/wavy-vector.svg'
 
@@ -14,7 +13,7 @@ export default function Hero() {
                 <h1>Otkrijte Moć Rekonekcijskog Isceljenja</h1>
                 <p className="my-6 font-normal">Uz pomoć rekonekcijskog isceljivanja, otključajte svoj puni potencijal, obnovite unutrašnju energiju i postignite harmoniju u svakodnevnom životu.</p>
                 <div>
-                    <Link to='/portfolio' className="btn">Zakažite Tretman</Link>
+                    <a href="tel:00496170961709" className="btn">Zakažite Tretman</a>
                 </div>
             </div>   
         </div>
