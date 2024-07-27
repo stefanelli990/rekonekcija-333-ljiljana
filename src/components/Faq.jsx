@@ -22,7 +22,7 @@ export default function Faq() {
   return (
     <section id="faq" className="bg-offWhite1">
         <div className="wrapper py-[75px] lg:py-[150px]">
-            <h2 className="text-center mb-[75px]">Najčešća pitanja</h2>
+            <h2 className="text-center sm:mb-[75px]">Najčešća pitanja</h2>
             <ul>
             {faq.map((item,index) => (
                 <li key={index} className="mb-4">

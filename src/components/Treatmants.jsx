@@ -7,7 +7,7 @@ export default function Treatmants() {
   return (
     <section id="tretmani">
         <div className="wrapper py-[75px] lg:py-[150px]">
-            <h2 className="text-center mb-[75px]">Tretmani za vas</h2>
+            <h2 className="text-center sm:mb-[75px]">Tretmani za vas</h2>
             <div className="flex flex-col md:flex-row gap-4">
                 {treatmants.map((item, index) => (
                     <div key={index} className="bg-offWhite1 px-6 py-10 rounded-2xl flex-1 text-center border border-offWhite1 hover:border-primaryColor duration-100 cursor-pointer">

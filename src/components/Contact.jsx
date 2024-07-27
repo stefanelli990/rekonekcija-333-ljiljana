@@ -29,19 +29,19 @@ export default function Contact() {
         <form className="md:w-1/2 flex flex-col space-y-4">
           <div className="flex flex-col space-y-1">
             <label htmlFor="name">Ime i prezime</label>
-            <input className="border border-gray-200 rounded-xl py-2 px-3 outline-primaryColor" type="text" id="name"
-                name="name"/>
+            <input className="border border-gray-200 rounded-2xl py-3 px-4 outline-primaryColor" type="text" id="name"
+                name="name" required/>
           </div>
           <div className="flex flex-col space-y-1">
             <label htmlFor="email">Email adresa</label>
-            <input className="border border-gray-200 rounded-xl py-2 px-3 outline-primaryColor"  type="email"
+            <input className="border border-gray-200 rounded-2xl py-3 px-4 outline-primaryColor"  type="email"
                 id="email"
-                name="email"/>
+                name="email" required/>
           </div>
           <div className="flex flex-col space-y-1">
             <label htmlFor="message">Vaša poruka</label>
-            <textarea className="border border-gray-200 rounded-xl py-2 px-3 resize-none outline-primaryColor" rows={6} id="message"
-                name="message"></textarea>
+            <textarea className="border border-gray-200 rounded-2xl py-3 px-4 resize-none outline-primaryColor" rows={6} id="message"
+                name="message" required></textarea>
           </div>
           <button className="btn">Pošaljite poruku</button>
         </form>
