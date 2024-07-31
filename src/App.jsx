@@ -1,11 +1,11 @@
 import { HelmetProvider } from "react-helmet-async"
 import Seo from "./components/Seo"
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import Reconnection from "./components/Reconnection";
-import Quote from "./components/Quote";
-import Treatmants from "./components/Treatmants";
-import Benefits from "./components/Benefits";
+import Hero from "./components/Hero"
+import Navbar from "./components/Navbar"
+import Reconnection from "./components/Reconnection"
+import Quote from "./components/Quote"
+import Treatmants from "./components/Treatmants"
+import Benefits from "./components/Benefits"
 import About from "./components/About"
 import Faq from "./components/Faq"
 import Contact from "./components/Contact"
@@ -18,7 +18,7 @@ function App() {
       title="Rekonekcija 333 Ljiljana"
       description="Otkrijte transformativnu moć rekonekcijskog isceljivanja. Iskusite holističko zdravlje i duhovno poravnanje uz naše stručne praktičare. Istražite naše usluge, recenzije klijenata i rezervišite svoju seansu već danas za obnovljeni osećaj ravnoteže i harmonije."
       keywords="Rekonekcijsko isceljivanje, lična rekonekcija, isceljenje, rekonekcija, holističko zdravlje, duhovno poravnanje, isceliteljske usluge"
-      image="https://rekonekcija333ljiljana.com/og-image.jpg"
+      image="/og-image.jpg"
       url="https://rekonekcija333ljiljana.com"
       />
       <Navbar />
