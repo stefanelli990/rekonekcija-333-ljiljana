@@ -18,7 +18,7 @@ function App() {
       title="Rekonekcija 333 Ljiljana"
       description="Otkrijte transformativnu moć rekonekcijskog isceljivanja. Iskusite holističko zdravlje i duhovno poravnanje uz naše stručne praktičare. Istražite naše usluge, recenzije klijenata i rezervišite svoju seansu već danas za obnovljeni osećaj ravnoteže i harmonije."
       keywords="Rekonekcijsko isceljivanje, lična rekonekcija, isceljenje, rekonekcija, holističko zdravlje, duhovno poravnanje, isceliteljske usluge"
-      image="https://yourwebsite.com/assets/about-img.jpg"
+      image="https://rekonekcija333ljiljana.com/og-image.jpg"
       url="https://rekonekcija333ljiljana.com"
       />
       <Navbar />
