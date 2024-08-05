@@ -1,6 +1,10 @@
+"use client"
+
 import { useState, useEffect } from "react"
-import logo from "../assets/logo.svg"
 import Menu from "../components/Menu"
+import Image from "next/image"
+import Link from "next/link"
+
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -33,16 +37,18 @@ export default function Navbar() {
       }`}
     >
       <div className="wrapper flex justify-between items-center mx-auto py-4">
-        <a href={"#hero"}
+        <Link href={'#hero'}
         className="cursor-pointer"
         aria-label="Go to Hero section"
         >
-          <img
-            className="w-[75px]"
-            src={logo}
+          <Image
+          width="0"
+          height="0"
+          style={{ width: '75px', height: 'auto' }}
+            src="/logo.svg"
             alt="Rekonekcija 333 Ljiljana Logo"
           />
-        </a>
+        </Link>
         <nav>
           <ul
             className={`hidden sm:flex space-x-4 font-normal ${
@@ -51,11 +57,11 @@ export default function Navbar() {
           >
             {navLinks.map((navLink, index) => (
               <li key={index}>
-              <a href={`#${navLink.to}`}
+              <Link href={`#${navLink.to}`}
                  aria-label={navLink.ariaLabel}
                  className="cursor-pointer hover:text-primaryColor duration-200">
                 {navLink.name}
-              </a>
+              </Link>
             </li>
             ))}
           </ul>

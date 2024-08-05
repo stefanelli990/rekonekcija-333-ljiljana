@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState } from "react"
+import Link from "next/link"
 
 export default function Menu({ scroll }) {
 
@@ -38,7 +39,7 @@ export default function Menu({ scroll }) {
         ></div>
       </button>
       <div
-        className={`wrapper bg-white fixed inset-0 flex justify-center items-center text-center transition-all duration-300 ${
+        className={`wrapper bg-white fixed inset-0 flex justify-center items-center text-center transition-all duration-300 sm:hidden ${
           menuVisible ? "visible opacity-100" : "invisible opacity-0"
         }`}
       >
@@ -46,13 +47,13 @@ export default function Menu({ scroll }) {
           <ul className="space-y-8 text-3xl font-normal">
             {navLinks.map((navLink, index) => (
               <li key={index}>
-                <a
+                <Link
                   href={`#${navLink.to}`}
                   onClick={() => setMenuVisible(false)}
                   aria-label={navLink.ariaLabel}
                 >
                   {navLink.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

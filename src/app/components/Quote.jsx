@@ -1,11 +1,10 @@
-import quoteImg from "../assets/cta-img.jpg"
 
 export default function Quote() {
   return (
     <section>
       <div className="wrapper">
         <div
-          style={{ backgroundImage: `url(${quoteImg})` }}
+          style={{ backgroundImage: `url(${'/cta-img.jpg'})` }}
           className="bg-center bg-cover py-[50px] lg:py-[100px] bg-fixed rounded-[32px] overflow-hidden relative sm:text-center -z-[-2]"
         >
           <blockquote className="max-w-5xl text-white mx-auto p-4">

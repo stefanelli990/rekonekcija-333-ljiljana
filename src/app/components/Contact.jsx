@@ -1,5 +1,7 @@
-import { BsEnvelopeFill } from "react-icons/bs";
-import { FaPhoneAlt } from "react-icons/fa";
+import Link from "next/link"
+import { BsEnvelopeFill } from "react-icons/bs"
+import { FaPhoneAlt } from "react-icons/fa"
+
 
 export default function Contact() {
   return (
@@ -16,13 +18,13 @@ export default function Contact() {
                 <div className="h-12 w-12 flex items-center justify-center border border-primaryColor rounded-full">
                 <FaPhoneAlt className="text-primaryColor"/>
                 </div>
-                <a href="tel:+381691162977" className="font-normal">+381 69 116 2977</a>
+                <Link href="tel:+381691162977" className="font-normal">+381 69 116 2977</Link>
             </li>
             <li className="flex items-center space-x-4">
                 <div className="h-12 w-12 flex items-center justify-center  border border-primaryColor rounded-full">
                 <BsEnvelopeFill className="text-primaryColor"/>
                 </div>
-                <a href="mailto:ljiljana.medovic@gmail.com" className="font-normal">ljiljana.medovic@gmail.com</a>
+                <Link href="mailto:ljiljana.medovic@gmail.com" className="font-normal">ljiljana.medovic@gmail.com</Link>
             </li>
           </ul>
         </div>
