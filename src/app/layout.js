@@ -4,6 +4,25 @@ import Head from 'next/head'
 export const metadata = {
   title: "Rekonekcija 333 Ljiljana | Otkrijte Moć Rekonekcijskog Isceljenja",
   description: "Otkrijte transformativnu moć rekonekcijskog isceljivanja. Iskusite holističko zdravlje i duhovno poravnanje uz naše stručne praktičare. Istražite naše usluge, recenzije klijenata i rezervišite svoju seansu već danas za obnovljeni osećaj ravnoteže i harmonije.",
+  icons: [
+    {
+      rel: 'icon',
+      type: 'image/png',
+      sizes: '32x32',
+      url: '/favicon-32x32.png',
+    },
+    {
+      rel: 'icon',
+      type: 'image/png',
+      sizes: '16x16',
+      url: '/favicon-16x16.png',
+    },
+    {
+      rel: 'apple-touch-icon',
+      sizes: '180x180',
+      url: '/apple-touch-icon.png',
+    },
+  ],
 };
 
 export default function RootLayout({ children }) {
@@ -23,8 +42,6 @@ export default function RootLayout({ children }) {
         <meta property="og:url" content="https://rekonekcija333ljiljana.com/" />
         <meta property="og:type" content="website" />
 
-        {/* Favicon */}
-        <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.ico" />
       </Head>
       <body>{children}</body>
     </html>
