@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 export const metadata = {
   title: "Rekonekcija 333 Ljiljana | Otkrijte Moć Rekonekcijskog Isceljenja",
-  description: "Otkrijte transformativnu moć rekonekcijskog isceljivanja. Iskusite holističko zdravlje i duhovno poravnanje uz naše stručne praktičare. Istražite naše usluge, recenzije klijenata i rezervišite svoju seansu već danas za obnovljeni osećaj ravnoteže i harmonije.",
+  description: "Iskusite moć rekonekcijskog isceljivanja. Osetite holističko zdravlje i duhovno poravnanje uz naše stručne praktičare. Rezervišite seansu već danas.",
   icons: [
     {
       rel: 'icon',
