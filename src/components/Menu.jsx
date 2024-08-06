@@ -1,5 +1,4 @@
-import { useState } from "react"
-import Link from "next/link"
+import { useState } from "react";
 
 export default function Menu({ scroll }) {
 
@@ -47,13 +46,13 @@ export default function Menu({ scroll }) {
           <ul className="space-y-8 text-3xl font-normal">
             {navLinks.map((navLink, index) => (
               <li key={index}>
-                <Link
+                <a
                   href={`#${navLink.to}`}
                   onClick={() => setMenuVisible(false)}
                   aria-label={navLink.ariaLabel}
                 >
                   {navLink.name}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
