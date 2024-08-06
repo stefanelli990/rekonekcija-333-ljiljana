@@ -16,7 +16,7 @@ function App() {
     <HelmetProvider>
       <Seo
         title="Rekonekcija 333 Ljiljana | Otkrijte Moć Rekonekcijskog Isceljenja"
-        description="Otkrijte transformativnu moć rekonekcijskog isceljivanja. Iskusite holističko zdravlje i duhovno poravnanje uz naše stručne praktičare. Istražite naše usluge, recenzije klijenata i rezervišite svoju seansu već danas za obnovljeni osećaj ravnoteže i harmonije."
+        description="Otkrijte transformativnu moć rekonekcijskog isceljivanja i iskusite holističko zdravlje i duhovno blagostanje."
         author="Ljiljana Medović"
         keywords="rekonekcijsko isceljivanje, lična rekonekcija, isceljenje, rekonekcija, holističko zdravlje, duhovno poravnanje, isceliteljske usluge"
         image="https://rekonekcija333ljiljana.com/og-image.jpg"
