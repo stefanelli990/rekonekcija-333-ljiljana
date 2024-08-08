@@ -1,6 +1,6 @@
 import { FaInstagram } from "react-icons/fa"
 import { RiFacebookFill } from "react-icons/ri"
-import wavyVector2 from '../assets/wavy-vector-footer.svg'
+import wavyVector2 from '../assets/wavy-vector-2.svg'
 
 export default function Footer() {
     

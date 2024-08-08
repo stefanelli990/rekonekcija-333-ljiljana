@@ -9,7 +9,7 @@ export default function Navbar() {
     { name: "Tretmani", to: "tretmani" },
     { name: "O meni", to: "o-meni" },
     { name: "Kontakt", to: "kontakt" },
-  ];
+  ]
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,13 +18,13 @@ export default function Navbar() {
       } else {
         setScrolled(false);
       }
-    };
+    }
 
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [])
 
   return (
     <header

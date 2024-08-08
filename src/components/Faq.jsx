@@ -1,4 +1,6 @@
 import { useState } from "react"
+import wavyVector2 from '../assets/wavy-vector-2.svg'
+import wavyVector2Reversed from '../assets/wavy-vector-2-reversed.svg'
 
 export default function Faq() {
 
@@ -21,7 +23,8 @@ export default function Faq() {
   };
   return (
     <section id="faq" className="bg-offWhite1">
-        <div className="wrapper py-[75px] lg:py-[150px]">
+      <img src={wavyVector2} className="relative inset-x-0 w-full" alt="" />
+        <div className="wrapper py-[75px]">
             <h2 className="sm:text-center sm:mb-[75px]">Najčešća pitanja</h2>
             <ul>
             {faq.map((item,index) => (
@@ -42,6 +45,7 @@ export default function Faq() {
             ))}
             </ul>
         </div>
+        <img src={wavyVector2Reversed} className="relative inset-x-0 w-full" alt="" />
     </section>
   )
 }
