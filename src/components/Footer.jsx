@@ -9,8 +9,8 @@ export default function Footer() {
   return (
     <footer>
         <img src={wavyVector2} alt="" className="relative inset-x-0 w-full" />
-        <div className="bg-offWhite1">
-        <div className="flex justify-center items-center text-center flex-col gap-6 px-0 pt-6 lg:pt-0 pb-10 font-normal">
+        <div className="bg-offWhite1 py-[50px] sm:pt-0">
+        <div className="flex justify-center items-center text-center flex-col gap-6 font-normal">
         <div className="flex space-x-6">
           <a href="https://www.instagram.com/rekonekcija_ljiljana/" className="btn btn-social" target="_blank" aria-label="Visit Instagram page"><FaInstagram /></a>
           <a href="https://www.facebook.com/profile.php?id=100095531199276" className="btn btn-social" target="_blank" aria-label="Visit Facebook page"><RiFacebookFill /></a>

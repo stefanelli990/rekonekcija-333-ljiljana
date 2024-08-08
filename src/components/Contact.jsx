@@ -23,9 +23,9 @@ export default function Contact() {
 
   return (
     <section id="kontakt">
-      <div className="wrapper py-[75px] lg:py-[150px]">
-        <div className="text-center mx-auto max-w-3xl">
-          <h2>Povežimo se</h2>
+      <div className="wrapper py-[50px] lg:py-[100px]">
+        <div className="mx-auto max-w-3xl md:text-center">
+          <h2 className="sm:mb-[50px]">Povežimo se</h2>
           <p>
             Ako imate pitanja u vezi rekonekcijskog isceljivanja, želite da
             saznate više o našim uslugama, ili biste želeli da zakažete svoju
@@ -33,7 +33,7 @@ export default function Contact() {
             mestu i ovde sam da vam pružim podršku na vašem putu ka isceljenju.
           </p>
         </div>
-        <div className="mt-[50px] sm:mt-[75px] flex flex-col gap-12 md:flex-row items-start lg:gap-24">
+        <div className="mt-[50px] flex flex-col gap-12 md:flex-row items-start lg:gap-24">
           <form className="w-full md:w-1/2 flex flex-col space-y-4">
             <div className="flex flex-col space-y-1">
               <label htmlFor="name">Ime i prezime</label>

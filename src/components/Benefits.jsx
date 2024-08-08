@@ -4,8 +4,8 @@ import benefitImg3 from "../assets/meditation.svg"
 import benefitImg4 from "../assets/stamina.svg"
 import benefitImg5 from "../assets/heartbeat.svg"
 import benefitImg6 from "../assets/person.svg"
-import wavyVector2 from '../assets/wavy-vector-2.svg'
-import wavyVector2Reversed from '../assets/wavy-vector-2-reversed.svg'
+import wavyVector3 from '../assets/wavy-vector-3.svg'
+import wavyVector3Reversed from '../assets/wavy-vector-3-reversed.svg'
 
 export default function Benefits() {
   const benefits = [
@@ -49,9 +49,9 @@ export default function Benefits() {
   
   return (
     <section id="benefits" className="bg-offWhite1" >
-      <img src={wavyVector2} className="relative inset-x-0 w-full" alt="" />
-      <div className="wrapper sm:text-center py-[75px]">
-        <h2 className="sm:mb-[75px]">Dobrobiti rekonekcije</h2>
+      <img src={wavyVector3} className="relative inset-x-0 w-full" alt="" />
+      <div className="wrapper sm:text-center py-[50px] sm:py-0">
+        <h2 className="sm:mb-[50px]">Dobrobiti rekonekcije</h2>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           {benefits.map((item, index) => (
             <div
@@ -67,7 +67,7 @@ export default function Benefits() {
           ))}
         </div>
       </div>
-      <img src={wavyVector2Reversed} className="relative inset-x-0 w-full" alt="" />
+      <img src={wavyVector3Reversed} className="relative inset-x-0 w-full" alt="" />
     </section>
   );
 }
