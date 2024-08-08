@@ -13,13 +13,13 @@ export default function Contact() {
           </p>
           <ul className="mt-6 space-y-4">
             <li className="flex items-center space-x-4">
-                <div className="h-12 w-12 flex items-center justify-center bg-offWhite1 rounded-full">
+                <div className="h-12 w-12 flex items-center justify-center bg-offWhite2 rounded-full">
                 <FaPhoneAlt className="text-primaryColor"/>
                 </div>
                 <a href="tel:+381691162977" className="font-normal">+381 69 116 2977</a>
             </li>
             <li className="flex items-center space-x-4">
-                <div className="h-12 w-12 flex items-center justify-center  bg-offWhite1 rounded-full">
+                <div className="h-12 w-12 flex items-center justify-center  bg-offWhite2 rounded-full">
                 <BsEnvelopeFill className="text-primaryColor"/>
                 </div>
                 <a href="mailto:ljiljana.medovic@gmail.com" className="font-normal">ljiljana.medovic@gmail.com</a>
