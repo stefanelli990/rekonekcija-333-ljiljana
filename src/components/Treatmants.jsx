@@ -10,7 +10,7 @@ export default function Treatmants() {
             <h2 className="sm:mb-[75px] md:text-center">Tretmani za vas</h2>
             <div className="flex flex-col md:flex-row gap-8">
                 {treatmants.map((item, index) => (
-                    <div key={index} className="bg-offWhite1 px-8 py-10 odd:rounded-t-[50px] even:rounded-b-[50px] md:odd:rounded-t-none md:odd:rounded-tl-[50px] md:odd:rounded-bl-[50px] md:even:rounded-b-none md:even:rounded-r-[50px] md:odd:text-right flex-1 flex flex-col border border-offWhite1 hover:border-primaryColor duration-100 cursor-pointer">
+                    <div key={index} className="bg-offWhite1 px-8 py-10 odd:rounded-t-[50px] even:rounded-b-[50px] md:odd:rounded-t-none md:odd:rounded-tl-[50px] md:odd:rounded-bl-[50px] md:even:rounded-b-none md:even:rounded-r-[50px] md:odd:text-right flex-1 flex flex-col justify-between border border-offWhite1 hover:border-primaryColor duration-100 cursor-pointer">
                         <div>
                             <h3>{item.treatmantTitle}</h3>
                             <p className="my-4">{item.treatmantDesc}</p>
