@@ -13,13 +13,13 @@ export default function Contact() {
           </p>
           <ul className="mt-6 space-y-4">
             <li className="flex items-center space-x-4">
-                <div className="h-12 w-12 flex items-center justify-center border border-primaryColor rounded-full">
+                <div className="h-12 w-12 flex items-center justify-center bg-offWhite1 rounded-full">
                 <FaPhoneAlt className="text-primaryColor"/>
                 </div>
                 <a href="tel:+381691162977" className="font-normal">+381 69 116 2977</a>
             </li>
             <li className="flex items-center space-x-4">
-                <div className="h-12 w-12 flex items-center justify-center  border border-primaryColor rounded-full">
+                <div className="h-12 w-12 flex items-center justify-center  bg-offWhite1 rounded-full">
                 <BsEnvelopeFill className="text-primaryColor"/>
                 </div>
                 <a href="mailto:ljiljana.medovic@gmail.com" className="font-normal">ljiljana.medovic@gmail.com</a>
@@ -29,18 +29,18 @@ export default function Contact() {
         <form className="md:w-1/2 flex flex-col space-y-4">
           <div className="flex flex-col space-y-1">
             <label htmlFor="name">Ime i prezime</label>
-            <input className="border border-gray-200 rounded-2xl py-3 px-4 outline-primaryColor" type="text" id="name"
+            <input className="border border-gray-200 bg-offWhite1 rounded-2xl py-3 px-4 outline-primaryColor" type="text" id="name"
                 name="name" required/>
           </div>
           <div className="flex flex-col space-y-1">
             <label htmlFor="email">Email adresa</label>
-            <input className="border border-gray-200 rounded-2xl py-3 px-4 outline-primaryColor"  type="email"
+            <input className="border border-gray-200 bg-offWhite1 rounded-2xl py-3 px-4 outline-primaryColor"  type="email"
                 id="email"
                 name="email" required/>
           </div>
           <div className="flex flex-col space-y-1">
             <label htmlFor="message">Vaša poruka</label>
-            <textarea className="border border-gray-200 rounded-2xl py-3 px-4 resize-none outline-primaryColor" rows={6} id="message"
+            <textarea className="border border-gray-200 bg-offWhite1 rounded-2xl py-3 px-4 resize-none outline-primaryColor" rows={6} id="message"
                 name="message" required></textarea>
           </div>
           <button className="btn">Pošaljite poruku</button>

@@ -24,13 +24,13 @@ export default function Reconnection() {
       {reconnection.map((item, index) => (
         <div
           key={index}
-          className={`wrapper flex md:items-center flex-col gap-12 md:flex-row lg:gap-24 pt-[75px] lg:pt-[150px] ${index % 2 === 0 ? 'md:flex-row md:text-right' : 'md:flex-row-reverse md:text-left'}`}
+          className={`wrapper flex md:items-center flex-col-reverse gap-12 md:flex-row lg:gap-24 pt-[75px] lg:pt-[150px] ${index % 2 === 0 ? 'md:flex-row md:text-right' : 'md:flex-row-reverse md:text-left'}`}
         >
           <div className="md:w-1/2 ">
             <h2>{item.reconnectionTitle}</h2>
             <p>{item.reconnectionDesc}</p>
           </div>
-          <div className={`md:w-1/2 h-[400px] md:h-[500px] overflow-hidden ${index % 2 === 0 ? 'rounded-bl-[100px] rounded-tr-[100px]' : 'rounded-br-[100px] rounded-tl-[100px]'}`}>
+          <div className={`md:w-1/2 h-[400px] md:h-[500px] overflow-hidden rounded-t-[75px] md:rounded-t-none ${index % 2 === 0 ? 'md:rounded-r-[75px] md:rounded-tr-[75px]' : 'md:rounded-l-[75px] md:rounded-tl-[75px]'}`}>
             <img
               className="w-full h-full object-cover"
               src={item.reconnectionImg}

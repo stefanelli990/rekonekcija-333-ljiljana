@@ -1,14 +1,14 @@
 import quoteImg from "../assets/cta-img.jpg"
+import wavyVector from '../assets/wavy-vector.svg'
+import wavyVectorReversed from '../assets/wavy-vector-reversed.svg'
 
 export default function Quote() {
   return (
-    <section>
-      <div className="wrapper">
-        <div
-          style={{ backgroundImage: `url(${quoteImg})` }}
-          className="bg-center bg-cover py-[50px] lg:py-[100px] bg-fixed rounded-[32px] overflow-hidden relative sm:text-center -z-[-2]"
-        >
-          <blockquote className="max-w-5xl text-white mx-auto p-4">
+    <section className="relative " style={ {clipPath: 'inset(0)' }}>
+      <img className="relative inset-x-0 -top-[1px] w-full z-10" src={wavyVectorReversed} alt="" />
+        <div className="px-4 py-[50px]" >
+          
+          <blockquote className="max-w-3xl text-white mx-auto sm:text-center">
             <p className="italic">
               “Uđite. Lezite i zatvorite oči. Pustite sebe da plutate, ali
               nemojte zaspati. Verujte, onaj ko sluša misli i molitve sasvim je
@@ -20,9 +20,10 @@ export default function Quote() {
               <p>- Erik Perl, osnivač Rekonekcije</p>
             </footer>
           </blockquote>
+          <img src={quoteImg} className=" w-full h-full object-cover fixed inset-0 -z-[2]" alt="" />
           <div className="bg-black/50 absolute inset-0 -z-[1]"></div>
         </div>
-      </div>
+        <img className="relative inset-x-0 -bottom-[1px] w-full z-10" src={wavyVector} alt="" />
     </section>
   );
 }

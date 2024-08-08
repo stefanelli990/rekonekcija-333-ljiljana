@@ -4,8 +4,8 @@ export default function About() {
   return (
     <section id="o-meni">
       <div className="wrapper py-[75px] lg:py-[150px]">
-        <div className='flex flex-col lg:flex-row items-center gap-16 lg:gap-24'>
-        <div className='h-[500px] lg:h-[600px] lg:flex-1 rounded-t-[100px] rounded-b-[100px] overflow-hidden'>
+        <div className='flex flex-col lg:flex-row items-center gap-12 lg:gap-24'>
+        <div className='h-[500px] lg:h-[600px] lg:flex-1 rounded-t-[100px] lg:rounded-r-none  lg:rounded-l-[100px] overflow-hidden'>
           <img className='h-full w-full object-cover' src={aboutImg} alt="" />
         </div>
         <div className='lg:flex-1'>

@@ -1,3 +1,5 @@
+// Seo.jsx
+
 import { Helmet } from 'react-helmet-async';
 
 export default function Seo({ title, description, keywords, image, url, author }) {

@@ -18,21 +18,21 @@ export default function Menu({ scroll }) {
     <>
       <button
         onClick={toggleMenu}
-        className="flex justify-center items-center flex-col fixed right-4 top-9 gap-[7px] z-20 sm:hidden"
+        className="flex justify-center items-center flex-col fixed right-4 top-9 gap-[8px] z-20 sm:hidden"
         aria-label="Toggle menu"
       >
         <div
-          className={`w-8 h-[3px] rounded-full transition-transform duration-300 ${
+          className={`w-8 h-[2px] rounded-full transition-transform duration-300 ${
             scroll || menuVisible ? "bg-darkColor" : "bg-white"
           } ${menuVisible ? "rotate-45 translate-y-2.5" : ""}`}
         ></div>
         <div
-          className={`w-8 h-[3px] rounded-full transition-transform duration-300 ${
+          className={`w-8 h-[2px] rounded-full transition-transform duration-300 ${
             scroll || menuVisible ? "bg-darkColor" : "bg-white"
           } ${menuVisible ? "opacity-0" : ""}`}
         ></div>
         <div
-          className={`w-8 h-[3px] rounded-full transition-transform duration-300 ${
+          className={`w-8 h-[2px] rounded-full transition-transform duration-300 ${
             scroll || menuVisible ? "bg-darkColor" : "bg-white"
           } ${menuVisible ? "-rotate-45 -translate-y-2.5" : ""}`}
         ></div>

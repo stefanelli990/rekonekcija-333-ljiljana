@@ -1,3 +1,5 @@
+// App.jsx
+
 import { HelmetProvider } from "react-helmet-async";
 import Seo from "./components/Seo";
 import Hero from "./components/Hero";
