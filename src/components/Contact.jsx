@@ -23,7 +23,7 @@ export default function Contact() {
 
   return (
     <section id="kontakt">
-      <div className="wrapper py-[50px] lg:py-[100px]">
+      <div className="wrapper py-[75px] lg:py-[100px]">
         <div className="mx-auto max-w-3xl md:text-center">
           <h2 className="sm:mb-[50px]">Povežimo se</h2>
           <p>
@@ -33,41 +33,47 @@ export default function Contact() {
             mestu i ovde sam da vam pružim podršku na vašem putu ka isceljenju.
           </p>
         </div>
-        <div className="mt-[50px] flex flex-col gap-12 md:flex-row items-start lg:gap-24">
-          <form className="w-full md:w-1/2 flex flex-col space-y-4">
-            <div className="flex flex-col space-y-1">
-              <label htmlFor="name">Ime i prezime</label>
+        <div className="mt-[50px] sm:mt-[75px] flex flex-col gap-4 md:flex-row items-start md:gap-12">
+          <form className="w-full md:w-1/2 flex flex-col gap-4">
+           
+              <label>
               <input
-                className="border border-gray-200 bg-offWhite1 rounded-2xl py-3 px-4 outline-primaryColor"
+                className="w-full border border-gray-200 rounded-r-none bg-offWhite1  rounded-t-[35px] md:rounded-t-none md:rounded-tl-[35px] p-4 pl-6 outline-primaryColor"
                 type="text"
                 id="name"
                 name="name"
+                placeholder="Ime i prezime"
                 required
               />
-            </div>
-            <div className="flex flex-col space-y-1">
-              <label htmlFor="email">Email adresa</label>
+              </label>
+         
+        
+              <label>
               <input
-                className="border border-gray-200 bg-offWhite1 rounded-2xl py-3 px-4 outline-primaryColor"
+                className="w-full border border-gray-200 bg-offWhite1 p-4 pl-6 outline-primaryColor"
                 type="email"
                 id="email"
                 name="email"
+                placeholder="Email adresa"
                 required
               />
-            </div>
-            <div className="flex flex-col space-y-1">
-              <label htmlFor="message">Vaša poruka</label>
+              </label>
+       
+          
+              <label >
               <textarea
-                className="border border-gray-200 bg-offWhite1 rounded-2xl py-3 px-4 resize-none outline-primaryColor"
+                className="w-full border border-gray-200 bg-offWhite1 p-4 pl-6 resize-none outline-primaryColor"
                 rows={6}
                 id="message"
                 name="message"
+                placeholder="Vaša poruka"
                 required
               ></textarea>
-            </div>
-            <button className="btn">Pošaljite poruku</button>
+              </label>
+        
+            <button className="btn btn-form -mt-[10px]">Pošaljite poruku</button>
           </form>
-          <div className="md:w-1/2 bg-offWhite1 w-full p-8 rounded-r-[50px]">
+          <div className="md:w-1/2 bg-offWhite1 w-full p-8 rounded-b-[50px] md:rounded-b-none md:rounded-r-[50px] md:rounded-br-[50px]">
             <h3 className="mb-6">Kontakt Informacije</h3>
             <ul className="flex flex-col gap-4">
               {contactInformations.map((information, index) => (

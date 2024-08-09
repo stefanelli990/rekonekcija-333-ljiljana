@@ -9,7 +9,7 @@ export default function Hero() {
         </video>
         <div className="bg-black/50 absolute inset-0 -z-[1]"></div>
         <div className="wrapper flex items-center justify-between  text-white">
-            <div className="max-w-[500px] pt-[150px] pb-[75px] lg:pb-[0] lg:pt-[200px]">
+            <div className="max-w-[500px] pt-[150px] pb-[75px]">
                 <h1>Otkrijte Moć Rekonekcijskog Isceljenja</h1>
                 <p className="my-6 font-normal">Uz pomoć rekonekcijskog isceljivanja, otključajte svoj puni potencijal, obnovite unutrašnju energiju i postignite harmoniju u svakodnevnom životu.</p>
                 <div>

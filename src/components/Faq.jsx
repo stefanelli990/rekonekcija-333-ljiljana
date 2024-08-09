@@ -24,7 +24,7 @@ export default function Faq() {
   return (
     <section id="faq" className="bg-offWhite1">
       <img src={wavyVector3} className="relative inset-x-0 w-full" alt="" />
-        <div className="wrapper py-[50px] sm:py-0">
+        <div className="wrapper py-[75px] sm:py-[25px]">
             <h2 className="sm:text-center sm:mb-[50px]">Najčešća pitanja</h2>
             <ul>
             {faq.map((item,index) => (

@@ -50,7 +50,7 @@ export default function Benefits() {
   return (
     <section id="benefits" className="bg-offWhite1" >
       <img src={wavyVector3} className="relative inset-x-0 w-full" alt="" />
-      <div className="wrapper sm:text-center py-[50px] sm:py-0">
+      <div className="wrapper sm:text-center py-[75px] sm:py-[25px]">
         <h2 className="sm:mb-[50px]">Dobrobiti rekonekcije</h2>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           {benefits.map((item, index) => (
