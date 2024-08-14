@@ -9,14 +9,14 @@ Welcome to the Rekonekcija 333 Ljiljana website repository! This project is dedi
 ## Features:
 
 - **Clean and Modern Design**: Aesthetic and user-friendly design that reflects the calming and transformative nature of Reconnection Healing.
-- **Informative Homepage**: Introduction to Reconnection Healing and Ljiljana's unique approach.
+- **Informative Landing Page**: Introduction to Reconnection Healing and Ljiljana's unique approach.
 - **Responsive Design**: The website is fully responsive, ensuring an optimal viewing experience on all devices (desktops, tablets, and mobile phones).
 - **SEO Optimized**: Implemented best practices for search engine optimization to enhance visibility.
 
 ## Technologies Used:
 
 - **Figma**: For designing and prototyping the website's layout and visual elements, ensuring a clean and modern design.
-- **React.js**: For building dynamic and interactive UI with a component-based architecture and efficient state management.
+- **React.js**: For building dynamic and interactive UI with a component-based architecture.
 - **Tailwind CSS**: For styling and creating a responsive design.
 - **Vite**: For optimizing website's performance.
 
