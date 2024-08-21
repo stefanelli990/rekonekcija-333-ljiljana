@@ -1,11 +1,7 @@
-import quoteImg from "../assets/cta-img.jpg"
-import wavyVector from '../assets/wavy-vector.svg'
-import wavyVectorReversed from '../assets/wavy-vector-reversed.svg'
-
 export default function Quote() {
   return (
     <section className="relative " style={ {clipPath: 'inset(0)' }}>
-      <img className="relative inset-x-0 -top-[1px] w-full z-10" src={wavyVectorReversed} alt="" />
+      <img className="relative inset-x-0 -top-[1px] w-full z-10" src="/wavy-vector-reversed.svg" alt="" />
         <div className="px-4 py-[50px]" >
           
           <blockquote className="max-w-3xl text-white mx-auto sm:text-center">
@@ -20,10 +16,10 @@ export default function Quote() {
               <p>- Erik Perl, osnivač Rekonekcije</p>
             </footer>
           </blockquote>
-          <img src={quoteImg} className=" w-full h-full object-cover fixed inset-0 -z-[2]" alt="" />
+          <img src="/cta-img.jpg" className=" w-full h-full object-cover fixed inset-0 -z-[2]" alt="" />
           <div className="bg-black/50 absolute inset-0 -z-[1]"></div>
         </div>
-        <img className="relative inset-x-0 -bottom-[1px] w-full z-10" src={wavyVector} alt="" />
+        <img className="relative inset-x-0 -bottom-[1px] w-full z-10" src="/wavy-vector.svg" alt="" />
     </section>
   );
 }

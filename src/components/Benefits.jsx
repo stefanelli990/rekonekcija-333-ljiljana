@@ -1,46 +1,39 @@
-import benefitImg1 from "../assets/physical-therapy.svg"
-import benefitImg2 from "../assets/psychiatry.svg"
-import benefitImg3 from "../assets/meditation.svg"
-import benefitImg4 from "../assets/stamina.svg"
-import benefitImg5 from "../assets/heartbeat.svg"
-import benefitImg6 from "../assets/person.svg"
-import wavyVector3 from '../assets/wavy-vector-3.svg'
-import wavyVector3Reversed from '../assets/wavy-vector-3-reversed.svg'
+
 
 export default function Benefits() {
   const benefits = [
     {
-      benefitIcon: benefitImg1,
+      benefitIcon: "/physical-therapy.svg",
       benefitTitle: "Fizičko zdravlje",
       benefitDesc:
         "Poboljšava opšte zdravstveno stanje, ublažava bol i pomaže u regeneraciji tela.",
     },
     {
-      benefitIcon: benefitImg2,
+      benefitIcon: "/psychiatry.svg",
       benefitTitle: "Mentalno zdravlje",
       benefitDesc:
         "Smanjuje stres, poboljšava mentalnu jasnoću i pomaže u rešavanju emocionalnih blokada.",
     },
     {
-      benefitIcon: benefitImg3,
+      benefitIcon: "/meditation.svg",
       benefitTitle: "Duhovni razvoj",
       benefitDesc:
         "Podstiče unutrašnji mir, povećava svest o životnim svrhama i promoviše duhovni rast.",
     },
     {
-      benefitIcon: benefitImg4,
+      benefitIcon: "/stamina.svg",
       benefitTitle: "Energetska ravnoteža",
       benefitDesc:
         "Balansira energetske centre u telu, pomažući u slobodnom protoku životne energije.",
     },
     {
-      benefitIcon: benefitImg5,
+      benefitIcon: "/heartbeat.svg",
       benefitTitle: "Poboljšana vitalnost",
       benefitDesc:
         "Povećava nivo energije i osećaj vitalnosti u svakodnevnom životu.",
     },
     {
-      benefitIcon: benefitImg6,
+      benefitIcon: "/person.svg",
       benefitTitle: "Lični razvoj",
       benefitDesc:
         "Podstiče osobni rast i samopouzdanje  kroz procese samopoznanja i unutrašnje harmonije.",
@@ -49,7 +42,7 @@ export default function Benefits() {
   
   return (
     <section id="benefits" className="bg-offWhite1" >
-      <img src={wavyVector3} className="relative inset-x-0 w-full" alt="" />
+      <img src="/wavy-vector-3.svg" className="relative inset-x-0 w-full" alt="" />
       <div className="wrapper sm:text-center py-[75px] sm:py-[25px]">
         <h2 className="sm:mb-[50px]">Dobrobiti rekonekcije</h2>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -67,7 +60,7 @@ export default function Benefits() {
           ))}
         </div>
       </div>
-      <img src={wavyVector3Reversed} className="relative inset-x-0 w-full" alt="" />
+      <img src="/wavy-vector-3-reversed.svg" className="relative inset-x-0 w-full" alt="" />
     </section>
   );
 }

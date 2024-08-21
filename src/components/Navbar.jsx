@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react"
-import logo from "../assets/logo.svg"
 import Menu from "../components/Menu"
 
 export default function Navbar() {
@@ -39,7 +38,7 @@ export default function Navbar() {
         >
           <img
             className="w-[75px]"
-            src={logo}
+            src="/logo.svg"
             alt="Rekonekcija 333 Ljiljana Logo"
           />
         </a>
