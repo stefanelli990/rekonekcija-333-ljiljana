@@ -38,7 +38,7 @@ export default function Contact() {
            
               <label>
               <input
-                className="w-full border border-gray-200 rounded-r-none bg-offWhite1  rounded-t-[35px] md:rounded-t-none md:rounded-tl-[35px] p-4 pl-6 outline-primaryColor"
+                className="w-full border border-gray-200 rounded-r-none bg-offWhite1  rounded-t-[28px] md:rounded-t-none md:rounded-tl-[28px] p-4 pl-6 outline-primaryColor"
                 type="text"
                 id="name"
                 name="name"
@@ -73,7 +73,7 @@ export default function Contact() {
         
             <button className="btn btn-form -mt-[10px]">Pošaljite poruku</button>
           </form>
-          <div className="md:w-1/2 bg-offWhite1 w-full p-8 rounded-b-[50px] md:rounded-b-none md:rounded-r-[50px] md:rounded-br-[50px]">
+          <div className="md:w-1/2 bg-offWhite1 w-full p-8 rounded-b-[40px] md:rounded-b-none md:rounded-r-[40px] md:rounded-br-[40px]">
             <h3 className="mb-6">Kontakt Informacije</h3>
             <ul className="flex flex-col gap-4">
               {contactInformations.map((information, index) => (

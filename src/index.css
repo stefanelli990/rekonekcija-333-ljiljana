@@ -38,7 +38,7 @@
     @apply py-0 px-0 h-12 w-12 rounded-full text-xl grid place-items-center;
   }
   .btn-form {
-    @apply p-4 rounded-none md:rounded-b-none md:rounded-bl-[35px];
+    @apply p-4 rounded-none md:rounded-b-none md:rounded-bl-[28px];
   }
 }
 

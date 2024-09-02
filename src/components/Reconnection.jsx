@@ -27,7 +27,7 @@ export default function Reconnection() {
             <h2>{item.reconnectionTitle}</h2>
             <p>{item.reconnectionDesc}</p>
           </div>
-          <div className={`md:w-1/2 h-[400px] md:h-[500px] overflow-hidden rounded-t-[75px] md:rounded-t-none ${index % 2 === 0 ? 'md:rounded-r-[75px] md:rounded-tr-[75px]' : 'md:rounded-l-[75px] md:rounded-tl-[75px]'}`}>
+          <div className={`md:w-1/2 h-[400px] md:h-[500px] overflow-hidden rounded-t-[100px] md:rounded-t-none ${index % 2 === 0 ? ' md:rounded-tr-[100px]' : 'md:rounded-bl-[100px] '}`}>
             <img
               className="w-full h-full object-cover"
               src={item.reconnectionImg}
