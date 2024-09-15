@@ -18,8 +18,11 @@ export default {
         darkColor: '#1C1C1C',
         offWhite1: '#FCFCFC',
         offWhite2: '#F7F7F7'
-      }
-    },
+      },
+      boxShadow: {
+        'navbar': 'rgba(17, 17, 26, 0.1) 0px 0px 16px'
+      },
+    }
   },
   plugins: [],
 }

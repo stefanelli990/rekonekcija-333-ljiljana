@@ -1,13 +1,7 @@
 import { useState } from "react";
+import { navLinks } from "../data";
 
 export default function Menu({ scroll }) {
-
-  const navLinks = [
-    { name: "Rekonekcija", to: "rekonekcija" },
-    { name: "Tretmani", to: "tretmani" },
-    { name: "O meni", to: "o-meni" },
-    { name: "Kontakt", to: "kontakt" },
-  ]
 
   const [menuVisible, setMenuVisible] = useState(false);
 

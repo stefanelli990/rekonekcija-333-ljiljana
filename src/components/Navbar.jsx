@@ -1,15 +1,10 @@
-import { useState, useEffect } from "react"
-import Menu from "../components/Menu"
+import { useState, useEffect } from "react";
+import Menu from "../components/Menu";
+import { navLinks } from "../data";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
-  const navLinks = [
-    { name: "Rekonekcija", to: "rekonekcija" },
-    { name: "Tretmani", to: "tretmani" },
-    { name: "O meni", to: "o-meni" },
-    { name: "Kontakt", to: "kontakt" },
-  ]
-
+  
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -28,7 +23,7 @@ export default function Navbar() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-10 duration-300 ${
-        scrolled ? "bg-white " : ""
+        scrolled ? "bg-white shadow-navbar " : ""
       }`}
     >
       <div className="wrapper flex justify-between items-center mx-auto py-4">

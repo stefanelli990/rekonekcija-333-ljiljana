@@ -1,9 +1,7 @@
+import { treatmants } from "../data";
+
 export default function Treatmants() {
 
-    const treatmants = [
-        { treatmantTitle: 'Rekonekcijsko isceljivanje', treatmantDesc: 'Rekonekcijsko isceljivanje uklanja energetske blokade koje su se formirale tokom života, počevši od najranijeg detinjstva. Ovaj proces se izvodi u prisustvu ili na daljinu kroz tri sesije koje se održavaju tri dana za redom. Svaka sesija je jedinstvena, sa svakim danom idemo sve dublje u proces isceljivanja.', treatmantPrice: 'Cena po jednoj sesiji je 40€'},
-        { treatmantTitle: 'Lična rekonekcija', treatmantDesc: 'Lična rekonekcija omogućava duboko i direktno energetsko oslobađanje blokada koje su se nakupljale tokom vašeg života. Ova metoda se izvodi u prisustvu, što omogućava direktan kontakt i rad sa vašim energetskim poljem. Lična Rekonekcija se radi samo jednom u životu i isključivo u prisustvu klijenta i praktičara.', treatmantPrice: 'Cena lične rekonekcije je 333€'}
-    ]
   return (
     <section id="tretmani">
         <div className="wrapper py-[75px] lg:py-[100px]">

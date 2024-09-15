@@ -1,16 +1,11 @@
-import { useState } from "react"
+import { useState } from "react";
+import { faq } from "../data";
+import wavyVector3 from '../assets/wavy-vector-3.svg';
+import wavyVector3Reversed from '../assets/wavy-vector-3-reversed.svg';
 
 export default function Faq() {
 
-    const faq = [
-        {question: 'Da li je rekonekcijsko isceljivanje bezbedno?', answer: 'Da, rekonekcijsko isceljivanje je potpuno bezbedno. Koristi prirodne energetske frekvencije koje su nežne i umirujuće. Nema nuspojava i nije invazivno.'},
-        {question: 'Šta mogu očekivati tokom sesije rekonekcijskog isceljivanja?', answer: 'Tokom sesije, možete osetiti različite senzacije poput toplote, hladnoće, trnaca ili blagog pritiska. Takođe možete doživeti emocionalne ili mentalne uvide. Svaka sesija je jedinstvena i prilagođena individualnim potrebama.'},
-        {question: 'Da li trebam verovati u rekonekcijsko isceljivanje da bi delovalo?', answer: 'Ne morate imati čvrsto uverenje u rekonekcijsko isceljivanje da bi delovalo. Otvoren um i spremnost da primite energiju su dovoljni. Isceljenje se dešava nezavisno od vaših uverenja.'},
-        {question: 'Kako se pripremiti za sesiju rekonekcijskog isceljivanja?', answer: 'Preporučuje se da dođete u opuštenom stanju, nosite udobnu odeću i budete otvoreni za iskustvo. Možete doneti i bilo kakve specifične namere ili pitanja na koja želite da se fokusirate tokom sesije.'},
-        {question: 'Ko može imati koristi od rekonekcijskog isceljivanja?', answer: 'Svako može imati koristi od rekonekcijskog isceljivanja, bez obzira na starost, pol ili zdravstveno stanje. Pomaže u postizanju opšteg blagostanja, smanjenju stresa i poboljšanju kvaliteta života.'},
-    ]
-
-    const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState(null);
 
   const toggleAccordion = (index) => {
     if (openIndex === index) {
@@ -21,7 +16,7 @@ export default function Faq() {
   };
   return (
     <section id="faq" className="bg-offWhite1">
-      <img src="/wavy-vector-3.svg" className="relative inset-x-0 w-full" alt="" />
+      <img src={wavyVector3} className="relative inset-x-0 w-full" alt="" />
         <div className="wrapper py-[75px] sm:py-[25px]">
             <h2 className="sm:text-center sm:mb-[50px]">Najčešća pitanja</h2>
             <ul>
@@ -43,7 +38,7 @@ export default function Faq() {
             ))}
             </ul>
         </div>
-        <img src="/wavy-vector-3-reversed.svg" className="relative inset-x-0 w-full" alt="" />
+        <img src={wavyVector3Reversed} className="relative inset-x-0 w-full" alt="" />
     </section>
   )
 }

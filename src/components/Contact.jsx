@@ -1,26 +1,7 @@
-import { BsEnvelopeFill } from "react-icons/bs";
-import { FaPhoneAlt } from "react-icons/fa";
-import { FaMapMarkerAlt } from "react-icons/fa";
+import { contactInformations } from "../data";
 
 export default function Contact() {
-  const contactInformations = [
-    {
-      icon: <FaPhoneAlt />,
-      content: "+381 69 116 2977",
-      link: "tel:+381691162977",
-    },
-    {
-      icon: <BsEnvelopeFill />,
-      content: "ljiljana.medovic@gmail.com",
-      link: "mailto:ljiljana.medovic@gmail.com",
-    },
-    {
-      icon: <FaMapMarkerAlt />,
-      content: "Marije Bursaća 8, Niš",
-      link: "https://www.google.com/maps?q=Marije+Bursaća+8,+Niš",
-    },
-  ];
-
+  
   return (
     <section id="kontakt">
       <div className="wrapper py-[75px] lg:py-[100px]">
@@ -35,7 +16,6 @@ export default function Contact() {
         </div>
         <div className="mt-[50px] sm:mt-[75px] flex flex-col gap-4 md:flex-row items-start md:gap-12">
           <form className="w-full md:w-1/2 flex flex-col gap-4">
-           
               <label>
               <input
                 className="w-full border border-gray-200 rounded-r-none bg-offWhite1  rounded-t-[28px] md:rounded-t-none md:rounded-tl-[28px] p-4 pl-6 outline-primaryColor"
@@ -46,8 +26,6 @@ export default function Contact() {
                 required
               />
               </label>
-         
-        
               <label>
               <input
                 className="w-full border border-gray-200 bg-offWhite1 p-4 pl-6 outline-primaryColor"
@@ -58,8 +36,6 @@ export default function Contact() {
                 required
               />
               </label>
-       
-          
               <label >
               <textarea
                 className="w-full border border-gray-200 bg-offWhite1 p-4 pl-6 resize-none outline-primaryColor"
@@ -70,7 +46,6 @@ export default function Contact() {
                 required
               ></textarea>
               </label>
-        
             <button className="btn btn-form -mt-[10px]">Pošaljite poruku</button>
           </form>
           <div className="md:w-1/2 bg-offWhite1 w-full p-8 rounded-b-[40px] md:rounded-b-none md:rounded-r-[40px] md:rounded-br-[40px]">
@@ -79,7 +54,7 @@ export default function Contact() {
               {contactInformations.map((information, index) => (
                 <li className="flex items-center space-x-4" key={index}>
                   <div className="h-12 w-12 flex items-center justify-center bg-offWhite2 text-primaryColor rounded-full">
-                    {information.icon}
+                    <img src={information.icon} alt="" />
                   </div>
                   <a href={information.link} className="font-normal">
                     {information.content}

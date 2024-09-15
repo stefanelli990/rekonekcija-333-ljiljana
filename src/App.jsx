@@ -1,5 +1,3 @@
-// App.jsx
-
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
 import Reconnection from "./components/Reconnection"
