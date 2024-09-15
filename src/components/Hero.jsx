@@ -17,7 +17,7 @@ export default function Hero() {
                 </div>
             </div>   
         </div>
-        <img className="relative inset-x-0 -bottom-[1px] w-full" src={wavyVector} />
+        <img className="relative inset-x-0 -bottom-[1px] w-full" src={wavyVector} alt='Wavy vector'/>
     </section>
   )
 }

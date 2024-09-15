@@ -16,7 +16,7 @@ export default function Faq() {
   };
   return (
     <section id="faq" className="bg-offWhite1">
-      <img src={wavyVector3} className="relative inset-x-0 w-full" alt="" />
+      <img src={wavyVector3} className="relative inset-x-0 w-full" alt="Wavy vector" />
         <div className="wrapper py-[75px] sm:py-[25px]">
             <h2 className="sm:text-center sm:mb-[50px]">Najčešća pitanja</h2>
             <ul>
@@ -38,7 +38,7 @@ export default function Faq() {
             ))}
             </ul>
         </div>
-        <img src={wavyVector3Reversed} className="relative inset-x-0 w-full" alt="" />
+        <img src={wavyVector3Reversed} className="relative inset-x-0 w-full" alt="Wavy vector" />
     </section>
   )
 }

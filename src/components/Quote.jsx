@@ -23,7 +23,7 @@ export default function Quote() {
           <img src={ctaImg} className=" w-full h-full object-cover fixed inset-0 -z-[2]" alt="" />
           <div className="bg-black/40 absolute inset-0 -z-[1]"></div>
         </div>
-        <img className="relative inset-x-0 -bottom-[1px] w-full z-10" src={wavyVector} alt="" />
+        <img className="relative inset-x-0 -bottom-[1px] w-full z-10" src={wavyVector} alt='Wavy vector' />
     </section>
   );
 }
