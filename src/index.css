@@ -10,7 +10,7 @@
     @apply scroll-smooth scroll-pt-10;
   }
   body {
-    @apply bg-white font-sans font-light leading-relaxed;
+    @apply bg-white font-sans leading-relaxed;
   }
   h1,
   h2 {

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { faq } from "../data";
 import wavyVector3 from '../assets/wavy-vector-3.svg';
 import wavyVector3Reversed from '../assets/wavy-vector-3-reversed.svg';
+import { AnimatePresence, motion } from "framer-motion";
 
 export default function Faq() {
 
@@ -29,8 +30,9 @@ export default function Faq() {
                             <div className={`w-[18px] h-[3px] bg-primaryColor rounded-full absolute top-1/2 -translate-y-1/2 transition-transform duration-200 ${openIndex === index ? 'rotate-0' : 'rotate-90'}`}></div>
                         </div>
                     </button>
+                    {/* sliding effect down bellow */}
                     {openIndex === index && (
-                    <div className="bg-white px-6 pt-4 pb-6 -mt-[20px] rounded-b-3xl shadow-2xl shadow-slate-100">
+                    <div className="bg-white px-6 pt-4 pb-6 -mt-5 rounded-b-3xl shadow-2xl shadow-slate-100">
                         <p>{item.answer}</p>
                     </div>
                     )}

@@ -56,7 +56,7 @@ export default function Contact() {
                   <div className="h-12 w-12 flex items-center justify-center bg-offWhite2 text-primaryColor rounded-full">
                     <img src={information.icon} alt="" />
                   </div>
-                  <a href={information.link} className="font-normal">
+                  <a href={information.link}>
                     {information.content}
                   </a>
                 </li>
