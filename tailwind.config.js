@@ -8,16 +8,15 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Nunito', 'sans-serif'],
-        serif: ['Cormorant Garamond', 'serif'],
+        serif: ['Garamond', 'serif'],
       },
       colors: {
         'primaryColor': {
-          light: 'hsl(335deg 69% 77%)',
-          DEFAULT: 'hsl(335.05deg 68.71% 71.18%)',
+          light: '#FBF5F4',
+          DEFAULT: '#EA9B8E',
         },
-        darkColor: '#1C1C1C',
-        offWhite1: '#FCFCFC',
-        offWhite2: '#F7F7F7'
+        darkColor: '#0D1B1E',
+        offWhite: '#FCFCFC'
       },
       boxShadow: {
         'navbar': 'rgba(17, 17, 26, 0.1) 0px 0px 16px'

@@ -3,8 +3,6 @@
 import { useState, useEffect } from "react";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
-import Reconnection from "./components/Reconnection";
-import Quote from "./components/Quote";
 import Treatmants from "./components/Treatmants";
 import Benefits from "./components/Benefits";
 import About from "./components/About";
@@ -12,6 +10,10 @@ import Faq from "./components/Faq";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Menu from "./components/Menu";
+import Intro from "./components/Intro";
+import Counter from "./components/Counter";
+import Cta from "./components/Cta";
+import Connect from "./components/Connect";
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -54,13 +56,15 @@ function App() {
       <Menu isOpen={isMenuOpen} closeMenu={closeMenu} />
       <main>
         <Hero />
-        <Reconnection />
-        <Quote />
+        <Intro/>
+        <Counter/>
         <Treatmants />
         <Benefits />
         <About />
         <Faq />
+        <Cta/>
         <Contact />
+        <Connect/>
       </main>
       <Footer />
     </>

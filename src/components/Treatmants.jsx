@@ -1,19 +1,24 @@
 import { treatmants } from "../data";
+import SectionTitle from "./SectionTitle";
 
 export default function Treatmants() {
 
   return (
     <section id="tretmani">
-        <div className="wrapper py-[75px] lg:py-[100px]">
-            <h2 className="sm:mb-[50px] md:text-center">Tretmani za vas</h2>
-            <div className="flex flex-col md:flex-row gap-8 lg:gap-12">
+        <div className="wrapper my-[75px] lg:my-[100px]">
+        <SectionTitle>
+          <h2><span className='font-bold text-primaryColor'>Tretmani</span> za vas</h2>
+          <p>Svaki tretman se prilagođava vašim jedinstvenim potrebama, bilo da se radi o fizičkim, emocionalnim ili duhovnim izazovima. Kombinujemo različite metode isceljenja kako bismo adresirali sve aspekte vašeg bića, uključujući telo, um i duh.</p>
+        </SectionTitle>
+            <div className="flex flex-col md:flex-row gap-4 md:gap-8">
                 {treatmants.map((item, index) => (
-                    <div key={index} className="bg-offWhite1 px-8 py-10 odd:rounded-t-[50px] even:rounded-b-[50px] md:odd:rounded-t-none md:odd:rounded-tl-[50px] md:odd:rounded-bl-[50px] md:even:rounded-b-none md:even:rounded-r-[50px] md:odd:text-right flex-1 flex flex-col justify-between border border-offWhite1 hover:border-primaryColor duration-100 cursor-pointer">
+                    <div key={index} className="bg-primaryColor-light rounded-[32px] flex flex-col items-start justify-between gap-4 px-5 py-6 md:p-8 ">
+                        <h3 className="">{item.treatmantTitle}</h3>
+                        <p>{item.treatmantDesc}</p>
                         <div>
-                            <h3>{item.treatmantTitle}</h3>
-                            <p className="my-4">{item.treatmantDesc}</p>
+                        <p className="font-semibold mb-4">{item.treatmantPrice}</p>
+                        <button className="btn">Zakažite Tretman</button>
                         </div>
-                        <p className="text-lg text-primaryColor font-semibold">{item.treatmantPrice}</p>
                     </div>
                 ))}
             </div>

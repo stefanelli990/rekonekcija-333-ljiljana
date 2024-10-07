@@ -1,30 +1,29 @@
 import { benefits } from "../data";
-import wavyVector3 from '../assets/wavy-vector-3.svg';
-import wavyVector3Reversed from '../assets/wavy-vector-3-reversed.svg';
+import SectionTitle from "./SectionTitle";
 
 export default function Benefits() {
   
   return (
     <section id="benefits" className="bg-offWhite1" >
-      <img src={wavyVector3} className="relative inset-x-0 w-full" alt="Wavy vector" />
-      <div className="wrapper sm:text-center py-[75px] sm:py-[25px]">
-        <h2 className="sm:mb-[50px]">Dobrobiti rekonekcije</h2>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="wrapper my-[75px] lg:my-[100px]">
+        <SectionTitle>
+          <h2><span className="text-primaryColor font-bold">Dobrobiti
+          </span> rekonekcije</h2>
+          <p>Rekonekcija nije samo proces isceljenja, već i put ka dubokoj transformaciji i otkrivanju vašeg punog potencijala. Otkrijte sveobuhvatne prednosti koje ovaj jedinstveni proces može doneti vašem životu i postignite harmoniju koja vodi ka ispunjenju na svim nivoima.</p>
+        </SectionTitle>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {benefits.map((item, index) => (
             <div
-              className="flex flex-col justify-center sm:items-center p-4"
+              className="border border-gray-300 rounded-2xl p-6"
               key={index}
             >
-              <div className="bg-offWhite2 rounded-full h-[80px] w-[80px] flex items-center justify-center">
-                <img className="w-[50px]" src={item.benefitIcon} alt="" />
-              </div>
+              <img className="w-[60px]" src={item.benefitIcon} alt="" />
               <h3 className="pt-4 pb-2">{item.benefitTitle}</h3>
               <p>{item.benefitDesc}</p>
             </div>
           ))}
         </div>
       </div>
-      <img src={wavyVector3Reversed} className="relative inset-x-0 w-full" alt="Wavy vector" />
     </section>
   );
 }

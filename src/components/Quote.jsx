@@ -9,14 +9,14 @@ export default function Quote() {
         <div className="px-4 py-[50px]" >
           
           <blockquote className="max-w-3xl text-white mx-auto sm:text-center">
-            <p className="italic">
+            <p className="italic font-serif text-3xl">
               “Uđite. Lezite i zatvorite oči. Pustite sebe da plutate, ali
               nemojte zaspati. Verujte, onaj ko sluša misli i molitve sasvim je
               izvesno već čuo Vaše. Ne samo da je čuo sve ono za šta ste se
               molili, nego je čuo i ono za šta se niste ni setili da se molite.
               On sve zna..."
             </p>
-            <footer className="mt-4">
+            <footer className="mt-6">
               <p>- Erik Perl, osnivač Rekonekcije</p>
             </footer>
           </blockquote>
