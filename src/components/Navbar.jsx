@@ -23,7 +23,7 @@ export default function Navbar({ scrolled, openMenu }) {
                 <a
                   href={`#${navLink.to}`}
                   aria-label={navLink.ariaLabel}
-                  className={`cursor-pointer  hover:text-primaryColor `}
+                  className={`cursor-pointer  hover:text-primaryColor duration-200`}
                 >
                   {navLink.name}
                 </a>

@@ -5,7 +5,7 @@ export default function About() {
     <section id="o-meni" className='bg-primaryColor-light'>
       <div className="wrapper py-[75px] lg:py-[100px]">
         <div className='flex flex-col items-center md:flex-row gap-8 xl:gap-24'>
-        <div className='md:w-1/2 h-[500px] rounded-[50px] overflow-hidden'>
+        <div className='md:w-1/2 h-[500px] rounded-[40px] overflow-hidden'>
           <img className='object-cover w-full h-full' src={aboutImg} alt="" />
         </div>
         <div className='md:w-1/2'>

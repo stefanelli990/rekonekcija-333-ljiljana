@@ -1,5 +1,9 @@
 @tailwind base;
 
+h1, h2, h3 {
+  line-height: 1.1;
+}
+
 body {
   line-height: 170%;
 }
@@ -12,7 +16,7 @@ body {
     @apply scroll-smooth scroll-pt-[100px];
   }
   body {
-    @apply bg-offWhite font-sans  leading-relaxed ;
+    @apply bg-offWhite font-sans;
   }
   h1,
   h2,
@@ -21,10 +25,10 @@ body {
     @apply font-serif;
   }
   h1 {
-    @apply text-[13vw] leading-[100%] sm:text-7xl;
+    @apply text-[13vw] sm:text-7xl;
   }
   h2 {
-    @apply text-5xl;
+    @apply text-4xl lg:text-5xl;
   }
   h3 {
     @apply text-3xl;
