@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
 import Treatmants from "./components/Treatmants";
 import Benefits from "./components/Benefits";
 import About from "./components/About";
@@ -14,6 +13,8 @@ import Intro from "./components/Intro";
 import Counter from "./components/Counter";
 import Cta from "./components/Cta";
 import Connect from "./components/Connect";
+import Navbar from "./components/Navbar";
+
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -21,7 +22,6 @@ function App() {
 
   useEffect(() => {
     const heroSection = document.getElementById("hero");
-    const scrollPosition = window.scrollY;
 
     const handleScroll = () => {
       const heroHeight = heroSection ? heroSection.offsetHeight : 0;
@@ -42,17 +42,21 @@ function App() {
     };
   }, []);
 
+  // open menu
   const openMenu = () => {
     setIsMenuOpen(!isMenuOpen); 
   };
-
+  // close menu
   const closeMenu = () => {
-    setIsMenuOpen(false); // Close the menu directly
+    setIsMenuOpen(false); 
   };
 
   return (
     <>
-      <Navbar scrolled={scrolled} openMenu={openMenu} />
+      {!scrolled && (
+        <Navbar navbarClasses={'absolute'} logoStyle={'/logo-white.svg'} scrolled={true} navLinkClasses={'text-white'} btnClasses={'btn-outline'} hamburgerClasses={'bg-white'} openMenu={openMenu} isOpen={isMenuOpen}/>
+      )}
+      <Navbar navbarClasses={'fixed bg-offWhite shadow-navbar'} scrolled={scrolled} logoStyle={'/logo-primary.svg'} navLinkClasses={'text-darkColor'} btnClasses={'btn-primary'} hamburgerClasses={'bg-darkColor'} openMenu={openMenu} isOpen={isMenuOpen}/>
       <Menu isOpen={isMenuOpen} closeMenu={closeMenu} />
       <main>
         <Hero />

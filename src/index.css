@@ -40,7 +40,10 @@ body {
     @apply px-4 max-w-6xl mx-auto;
   }
   .btn {
-    @apply bg-primaryColor text-white capitalize font-normal rounded-full py-3 px-5 text-nowrap inline-block border border-primaryColor duration-200 hover:text-primaryColor hover:bg-transparent;
+    @apply capitalize font-normal rounded-full py-3 px-5 text-nowrap inline-block border  duration-200  hover:bg-transparent;
+  }
+  .btn-primary {
+    @apply bg-primaryColor text-white border-primaryColor hover:text-primaryColor;
   }
   .btn-outline {
     @apply bg-transparent border border-white hover:bg-primaryColor hover:text-white hover:border-primaryColor;

@@ -14,7 +14,7 @@ export default function Benefits() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {benefits.map((item, index) => (
             <div
-              className="border border-gray-300 rounded-2xl p-6"
+              className="border border-gray-300 rounded-3xl p-6"
               key={index}
             >
               <img className="w-[60px]" src={item.benefitIcon} alt="" />

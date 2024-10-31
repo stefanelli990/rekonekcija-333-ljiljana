@@ -1,3 +1,5 @@
+// Menu jsx
+
 import { navLinks } from "../data";
 
 export default function Menu({ isOpen, closeMenu  }) {
@@ -32,7 +34,7 @@ export default function Menu({ isOpen, closeMenu  }) {
             </li>
           ))}
           <li>
-            <a href="tel:+381691162977" className="btn">Zakažite Tretman</a>
+            <a href="tel:+381691162977" className="btn btn-primary">Zakažite Tretman</a>
           </li>
         </ul>
       </nav>
