@@ -12,8 +12,8 @@ export default function Treatmants() {
         </SectionTitle>
             <div className="flex flex-col md:flex-row gap-4 md:gap-8">
                 {treatmants.map((item, index) => (
-                    <div key={index} className="bg-primaryColor-light rounded-[36px] md:rounded-[40px] flex flex-col items-start justify-between gap-4 p-5 md:p-7">
-                        <h3 className="">{item.treatmantTitle}</h3>
+                    <div key={index} className="bg-primaryColor-light rounded-[36px] md:rounded-[40px] flex flex-col items-start justify-between gap-4 p-6 md:p-7">
+                        <h3>{item.treatmantTitle}</h3>
                         <p>{item.treatmantDesc}</p>
                         <div>
                         <p className="font-semibold mb-4">{item.treatmantPrice}</p>
