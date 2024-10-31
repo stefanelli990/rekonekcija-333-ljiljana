@@ -1,5 +1,7 @@
 # Rekonekcija 333 Ljiljana
 
+![QR Code Component Screenshot](src/assets/screenshot.png)
+
 ## Description:
 
 Welcome to the Rekonekcija 333 Ljiljana website repository! This project is dedicated to promoting and providing detailed information about Reconnection Healing, its benefits, and how it can be accessed through Ljiljana's practice.
