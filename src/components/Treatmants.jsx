@@ -17,7 +17,7 @@ export default function Treatmants() {
                         <p>{item.treatmantDesc}</p>
                         <div>
                         <p className="font-semibold mb-4">{item.treatmantPrice}</p>
-                        <button className="btn btn-primary">Zakažite Tretman</button>
+                        <a href="tel:+381691162977" className="btn btn-primary">Zakažite Tretman</a>
                         </div>
                     </div>
                 ))}

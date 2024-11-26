@@ -2,7 +2,7 @@ import { socialNetworks } from "../data"
 
 export default function Connect() {
   return (
-    <section className="bg-primaryColor-light py-[50px]">
+    <section className="bg-primaryColor-light py-[50px] lg:py-[75px]">
         <div className="wrapper">
             <div className="flex flex-wrap items-center justify-between gap-6">
                 <h2><span className="text-primaryColor font-bold">Povežimo</span> se</h2>

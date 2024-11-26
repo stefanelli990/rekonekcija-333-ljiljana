@@ -60,7 +60,6 @@ function App() {
       <Menu isOpen={isMenuOpen} closeMenu={closeMenu} />
       <main>
         <Hero />
-        <Intro/>
         <Counter/>
         <Treatmants />
         <Benefits />

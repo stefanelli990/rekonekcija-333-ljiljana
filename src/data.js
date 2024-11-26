@@ -101,8 +101,8 @@ export const contactInformations = [
   {
     contactIcon: envelopeIcon,
     contactTitle: 'Pišite',
-    contactInformation: "ljiljana.medovic@gmail.com",
-    contactLink: "mailto:ljiljana.medovic@gmail.com",
+    contactInformation: "ljiljananaildesign@gmail.com",
+    contactLink: "mailto:ljiljananaildesign@gmail.com",
   },
   {
     contactIcon: mapMarkerIcon,
