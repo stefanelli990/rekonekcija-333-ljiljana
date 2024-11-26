@@ -1,4 +1,4 @@
-import ctaImg from '../assets/cta-img.jpg';
+import ctaImg from '../assets/cta-img.webp';
 
 export default function Cta() {
   return (
