@@ -9,7 +9,6 @@ import Faq from "./components/Faq";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Menu from "./components/Menu";
-import Intro from "./components/Intro";
 import Counter from "./components/Counter";
 import Cta from "./components/Cta";
 import Connect from "./components/Connect";
