@@ -34,9 +34,9 @@ export const reconnection = [
   ];
 
 export const counter = [
-  { counterNumber: 1000, counterTitle: 'Zadovoljnih klijenata'},
-  { counterNumber: 100, counterTitle: 'Održanih seansi'},
-  { counterNumber: 10, counterTitle: 'Godina iskustva'}
+  { counterNumber: 1000, counterTitle: 'Zadovoljnih klijenata', counterDesc: 'Rekonekcija donosi vidljive rezultate, a zadovoljstvo klijenata potvrda je efikasnosti metode.'},
+  { counterNumber: 100, counterTitle: 'Održanih seansi', counterDesc: 'Kroz uspešno održane seanse, brojni klijenti su obnovili svoju energiju, postigli duhovni mir i unapredili kvalitet svog života.'},
+  { counterNumber: 10, counterTitle: 'Godina iskustva', counterDesc: 'Višegodišnje iskustvo u primeni rekonekcijskog isceljenja, sa ciljem uspostavljanja ravnoteže i unutrašnje transformacije.'}
 ]  
 
 export const treatmants = [
