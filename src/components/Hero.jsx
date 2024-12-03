@@ -6,7 +6,7 @@ export default function Hero() {
         <img className='absolute inset-0 w-full h-full object-cover -z-[2]' src={heroBg} alt="" />
         <div className="bg-black/35 absolute inset-0 -z-[1]"></div>
         <div className="wrapper flex items-center justify-between min-h-screen text-white">
-            <div className="max-w-[550px] sm:pt-[150px] sm:pb-[60px]">
+            <div className="max-w-[450px] sm:max-w-[550px] sm:pt-[150px] sm:pb-[60px]">
                 <h1>Otkrijte <span className='text-primaryColor font-bold'>Moć</span> Rekonekcijskog Isceljenja</h1>
                 <p className="my-6">Uz pomoć rekonekcijskog Isceljenja, otključajte svoj puni potencijal, obnovite unutrašnju energiju i postignite harmoniju u svakodnevnom životu.</p>
                 <div>

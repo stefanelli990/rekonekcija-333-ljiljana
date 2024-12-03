@@ -25,7 +25,7 @@ body {
     @apply font-serif;
   }
   h1 {
-    @apply text-[13vw] sm:text-7xl;
+    @apply text-[10vw] sm:text-7xl;
   }
   h2 {
     @apply text-4xl lg:text-5xl;
