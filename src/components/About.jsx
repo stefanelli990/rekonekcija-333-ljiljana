@@ -8,7 +8,7 @@ export default function About() {
         <div className='md:w-1/2 h-[500px] rounded-[40px] overflow-hidden'>
           <img className='object-cover w-full h-full' src={aboutImg} alt="" />
         </div>
-        <div className='md:w-1/2'>
+        <div className='text-center md:text-left md:w-1/2'>
           <h2 className='mb-4'>Moj <span className='text-primaryColor font-bold'>put</span> rekonekcije</h2>
           <p className='text-xl mb-6'>
             Ljiljana Medović - Prakticar rekonekcije
