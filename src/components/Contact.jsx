@@ -1,4 +1,5 @@
 import { contactInformations } from "../data";
+import Card from "./Card";
 import SectionTitle from "./SectionTitle";
 
 export default function Contact() {
@@ -12,11 +13,7 @@ export default function Contact() {
         </SectionTitle>
         <div className="grid md:grid-cols-3 gap-4">
           {contactInformations.map((item, index) => (
-            <a href={item.contactLink} key={index} className="space-y-2 text-center border border-gray-300 py-[50px] rounded-3xl">
-            <img className="inline" src={item.contactIcon} alt="" />
-            <h3>{item.contactTitle}</h3>
-            <p>{item.contactInformation}</p>
-          </a>
+          <Card key={index} link={item.contactLink} icon={item.contactIcon} title={item.contactTitle} desc={item.contactInformation}/>
           ))}
         </div>
       </div>

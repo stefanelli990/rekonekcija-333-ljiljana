@@ -13,10 +13,10 @@ body {
 
 @layer base {
   html {
-    @apply scroll-smooth scroll-pt-[100px];
+    @apply scroll-smooth;
   }
   body {
-    @apply bg-offWhite font-sans;
+    @apply bg-offWhite font-sans text-[15px];
   }
   h1,
   h2,
@@ -33,6 +33,7 @@ body {
   h3 {
     @apply text-3xl;
   }
+  
 }
 
 @layer components {
@@ -46,7 +47,7 @@ body {
     @apply bg-primaryColor text-white border-primaryColor hover:text-primaryColor;
   }
   .btn-outline {
-    @apply bg-transparent border border-white hover:bg-primaryColor hover:text-white hover:border-primaryColor;
+    @apply bg-transparent border text-white border-white hover:bg-primaryColor hover:border-primaryColor;
   }
 }
 

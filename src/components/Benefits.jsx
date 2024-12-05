@@ -1,4 +1,5 @@
 import { benefits } from "../data";
+import Card from "./Card";
 import SectionTitle from "./SectionTitle";
 
 export default function Benefits() {
@@ -13,14 +14,7 @@ export default function Benefits() {
         </SectionTitle>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {benefits.map((item, index) => (
-            <div
-              className="text-center flex items-center flex-col sm:text-left sm:items-start border border-gray-300 rounded-3xl p-6"
-              key={index}
-            >
-              <img className="w-[60px]" src={item.benefitIcon} alt="" />
-              <h3 className="pt-4 pb-2">{item.benefitTitle}</h3>
-              <p>{item.benefitDesc}</p>
-            </div>
+            <Card key={index} icon={item.benefitIcon} title={item.benefitTitle} desc={item.benefitDesc}/>
           ))}
         </div>
       </div>

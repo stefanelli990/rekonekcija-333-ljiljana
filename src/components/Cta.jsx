@@ -5,7 +5,7 @@ export default function Cta() {
     <section>
         <div className="wrapper" >
           <div className="bg-primaryColor-light flex items-center flex-col md:flex-row-reverse rounded-[24px] lg:rounded-[40px] overflow-hidden">
-            <div className="md:w-1/2 p-8 lg:p-14 md:py-0 flex flex-col gap-6 items-center md:items-start text-center md:text-left">
+            <div className="md:w-1/2 p-8 lg:p-14 md:py-0 flex flex-col gap-6 items-start">
             <div className='lg:max-w-sm'>
             <h2 className=''><span className='font-bold text-primaryColor'>Zakažite</span> tretman već danas</h2>
             </div>

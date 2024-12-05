@@ -16,25 +16,8 @@ export const navLinks = [
     { name: "Kontakt", to: "kontakt" },
   ];
 
-export const reconnection = [
-    {
-      reconnectionTitle: "Pojam rekonekcije",
-      reconnectionDesc:
-        "Rekonekcija je metoda energetskog isceljenja koju je razvio Erik Perl. Ova tehnika se fokusira na ponovnu povezanost sa univerzalnom energijom i vraćanje tela u stanje ravnoteže i zdravlja. Prema ovoj metodi, rekonekcija omogućava telo da se prilagodi višoj frekvenciji energije, što može dovesti do fizičkog, mentalnog i duhovnog isceljenja.",
-      
-      alt: "Photo Shooting image",
-    },
-    {
-      reconnectionTitle: "Delovanje rekonekcije",
-      reconnectionDesc:
-        "Tokom sesije rekonekcije, koriste se specifične energetske frekvencije  kako bi podstakao vaš proces isceljenja. Ove frekvencije deluju na otklanjanju energetskih blokada i omogućavaju vam dublju povezanost sa univerzumom i vašom unutrašnjom prirodom. Sesije su neinvazivne i mogu se obavljati i uživo i na daljinu.",
-     
-      alt: "Video Shooting image",
-    },
-  ];
-
 export const counter = [
-  { counterNumber: 1000, counterTitle: 'Zadovoljnih klijenata', counterDesc: 'Rekonekcija donosi vidljive rezultate, a zadovoljstvo klijenata potvrda je efikasnosti metode.'},
+  { counterNumber: 1000, counterTitle: 'Zadovoljnih klijenata', counterDesc: 'Rekonekcija pruža vidljive i trajne rezultate, a zadovoljstvo klijenata potvrda je efikasnosti ove delotvorne metode.'},
   { counterNumber: 100, counterTitle: 'Održanih seansi', counterDesc: 'Kroz uspešno održane seanse, brojni klijenti su obnovili svoju energiju, postigli duhovni mir i unapredili kvalitet svog života.'},
   { counterNumber: 10, counterTitle: 'Godina iskustva', counterDesc: 'Višegodišnje iskustvo u primeni rekonekcijskog isceljenja, sa ciljem uspostavljanja ravnoteže i unutrašnje transformacije.'}
 ]  
